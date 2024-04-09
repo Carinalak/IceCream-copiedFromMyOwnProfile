@@ -1,0 +1,15 @@
+<svg width="617" height="448" viewBox="0 0 617 448" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle id="orangeCircle" cx="567" cy="0" r="400" fill="#FFCB85" fill-opacity="0.5"/>
+</svg>
+
+<script>
+    gsap.to("#orangeCircle", {
+        x: 15,
+        y: 25,
+        duration: 6, 
+        repeat: -1,
+        yoyo: true,
+        ease: "easeInOutSine"
+    });
+</script> 
+
