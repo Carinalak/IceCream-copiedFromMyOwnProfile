@@ -25,6 +25,12 @@ Bakgrunden på vår webbplats är en gul färg med pastelliga cirklar i rosa och
 ### Glassanimation:
 Vi har implementerat en glassanimation där glasskulorna rör sig när användaren hovrar över glassen. Om användaren sen klickar på glassen hoppar glasskulorna upp en bit för att ge en interaktiv och rolig användarupplevelse.
 
+### Hover- och klickeffekter:
+I vår design har vi lagt till hover och klickeffekter på en del av designen. 
+- **Produktbilderna:**  När användaren hovrar på glassen så förstoras bilden, den får en ram och användaren kan läsa om glassens ingredienser. 
+- **Länkar och knappar:** Vid hovring och klick på länkar och knappar skiftar färgerna från olika nyanser av brunt, rosa och svart.
+- **Meny:** Vid hovring över menyn samt vi klick på den ändras färgerna från mörkbrun till ljusbrun, till ljusrosa.
+
 ### Wireframes:
 Mobile version
 ![Mobile version](assets/mobile.png)
