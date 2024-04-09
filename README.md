@@ -24,3 +24,13 @@ Bakgrunden på vår webbplats är en gul färg med pastelliga cirklar i rosa och
 
 ### Glassanimation:
 Vi har implementerat en glassanimation där glasskulorna rör sig när användaren hovrar över glassen. Om användaren sen klickar på glassen hoppar glasskulorna upp en bit för att ge en interaktiv och rolig användarupplevelse.
+
+### Wireframes:
+Mobile version
+![Mobile version](assets/mobile.png)
+
+Tablet version
+![Tablet version](assets/tablet.png)
+
+Desktop version
+![Desktop version](assets/desktop.png)
