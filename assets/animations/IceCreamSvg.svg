@@ -1,0 +1,128 @@
+<svg id="mySVG" width="83" height="120" viewBox="-10 30 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M35.4636 145.604L10.999 53.3656L72.4237 57.6246L35.4636 145.604Z" fill="#FFCB85" fill-opacity="0.71"/>
+    <path d="M71.6921 58.0751L35.5708 144.058L11.6614 53.9128L71.6921 58.0751Z" stroke="#6B3E26" stroke-opacity="0.5"/>
+                
+    <circle cx="58" cy="25" r="25" fill="#FFC5D9" id="strawberry"/>
+    <circle cx="25" cy="33" r="25" fill="#6B3E26" id="chocolate"/>
+    <circle cx="58" cy="50" r="25" fill="#C2F2D0" id="mint"/>
+</svg>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script>
+    let svg = document.getElementById('mySVG');
+    let isAnimating = false;
+    svg.addEventListener('mouseenter', function() {
+        if (!isAnimating) {
+            isAnimating = true;
+            gsap.to('svg', {
+                duration: 2,
+                rotation: 3, 
+                transformOrigin: 'center', 
+                repeat: 0, 
+                ease: "power1.inOut"
+            });
+            gsap.to('#strawberry', {
+                duration: 2,
+                fill:'#FF92D3',
+                repeat: -1, 
+                yoyo: true 
+            });
+            gsap.to('#strawberry', {
+                duration: 1,
+                y: -5, 
+                repeat: 1, 
+                yoyo: true, 
+                onComplete: function() {
+                    gsap.to('#strawberry', { 
+                        duration: 0.9,
+                        x: 3,
+                        y: 0
+                    });
+                }
+            });
+            gsap.to('#mint', {
+                duration: 1,
+                x: "+=4",
+                y: 2,
+                repeat: 2,
+                yoyo: true, 
+                onComplete: function() {
+                    gsap.to('#mint', { 
+                        duration: 0.9,
+                        x: 3,
+                        y: 0,
+                        onComplete: function() {
+                            isAnimating = false;
+                        }
+                    });
+                }
+            });
+            gsap.to('#chocolate', {
+                duration: 1,
+                y: -4,
+                x: 2, 
+                onComplete: function() {
+                    gsap.to('#chocolate', { 
+                        duration: 0.5,
+                        x: 0,
+                        y: 0
+                    });
+                }
+            });
+        }
+    });
+    svg.addEventListener('click', function() {
+        if (!isAnimating) {
+            isAnimating = true;
+            gsap.to('#chocolate', {
+                duration: 0.4,
+                y: -30,
+                x: -2,
+                ease: "power1.inOut",
+                onComplete: function() {
+                    gsap.to('#chocolate', { 
+                        duration: 0.6,
+                        y: 0,
+                        x: 0,
+                        onComplete: function() {
+                            isAnimating = false;
+                        }
+                    });
+                }
+            });
+            gsap.to('#strawberry', {
+                duration: 0.4,
+                y: -50,
+                x: 15,
+                ease: "power1.inOut",
+                onComplete: function() {
+                    gsap.to('#strawberry', { 
+                        duration: 0.6,
+                        y: 0,
+                        x: 0,
+                        onComplete: function() {
+                            isAnimating = false;
+                        }
+                    });
+                }
+            });
+            gsap.to('#mint', {
+                duration: 0.4,
+                y: -10,
+                ease: "power1.inOut",
+                onComplete: function() {
+                    gsap.to('#mint', {
+                        duration: 0.6,
+                        y: 0,
+                        onComplete: function() {
+                            isAnimating = false;
+                        }
+                    });
+                }
+            });
+        }
+    })
+    svg.addEventListener('mouseleave', function() {
+        isAnimating = false;
+    });
+</script>
