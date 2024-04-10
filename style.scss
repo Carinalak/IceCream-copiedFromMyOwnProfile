@@ -1,0 +1,24 @@
+@import '/src/scss/abstracts/reset';
+@import '/src/scss/abstracts/colors';
+@import '/src/scss/abstracts/mixins';
+
+@import '/src/scss/components/background';
+@import '/src/scss/components/header';
+@import '/src/scss/components/products';
+@import '/src/scss/components/cookie';
+@import '/src/scss/components/footer';
+
+@media (hover: hover) {
+    @import '/src/scss/abstracts/hover';
+}
+
+@import '/src/scss/layout/mobile';
+
+@media screen and (min-width: 900px) and (orientation: landscape) {
+    @import '/src/scss/layout/tablet';
+}
+
+@media screen and (min-width: 1440px) {
+    @import '/src/scss/layout/desktop';
+}
+
