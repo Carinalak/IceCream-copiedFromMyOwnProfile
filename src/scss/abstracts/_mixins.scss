@@ -1,0 +1,183 @@
+@mixin backgroundurl ($Backgroundimageurl, $Backgroundsizevalue, $Backgroundrepeatvalue, $Backgroundpositionvalue){
+    background-image: $Backgroundimageurl;
+    
+    @if $Backgroundsizevalue != none {
+        background-size: $Backgroundsizevalue;
+    }
+    
+    @if $Backgroundrepeatvalue != none {
+        background-repeat: $Backgroundrepeatvalue;
+    }
+    
+    @if $Backgroundpositionvalue != none {
+        background-position: $Backgroundpositionvalue;
+    }
+}
+
+@mixin buttonReset($backgroundColor, $paddingValue, $marginValue, $borderValue, $borderRadiusValue, $colorValue) {
+
+    @if $backgroundColor == 'none' {
+        background-color: transparent;
+    }
+    @else {
+        background-color: $backgroundColor;
+    }
+
+    @if $paddingValue == 'default' {
+        padding: 18px 55px;
+    }
+    @else {
+        padding: $paddingValue;
+    }
+
+    @if $marginValue == 'default' {
+        margin: 0;
+    }
+    @else {
+        margin: $marginValue;
+    }
+
+    @if $borderValue == 'default' {
+        border: 0;
+    }
+    @else {
+        border: $borderValue;
+    }
+
+    @if $borderRadiusValue == 'default' {
+        border-radius: 20px;
+    }
+    @else {
+        border-radius: $borderRadiusValue;
+    }
+
+    @if $colorValue == 'default' {
+        color: $button-text;
+    }
+    @else {
+        color: $colorValue;
+    }
+
+    cursor: pointer;
+}
+
+@mixin boxShadow($dropShadow, $offsetX, $offsetY, $blurRadius, $spreadRadius, $color) {
+    
+    @if $dropShadow == 'button' {
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.25);
+    } 
+    @if $dropShadow == 'header' {
+        box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+    @if $dropShadow == 'input' {
+        box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+    @if $dropShadow == 'product' {
+        box-shadow: 1px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+    @else {
+        box-shadow: $offsetX, $offsetY, $blurRadius, $spreadRadius, $color;
+    }
+}
+
+@mixin textShadow($dropShadow, $offsetX, $offsetY, $blurRadius, $color) {
+    
+    @if $dropShadow == 'title' {
+        box-shadow: 0px 4px 4px $chocolate-color;
+    } 
+    @if $dropShadow == 'titleBrown' {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    } 
+    @else {
+        box-shadow: $offsetX, $offsetY, $blurRadius, $color;
+    }
+}
+
+@mixin inputField($backgroundColor, $paddingValue, $marginValue, $borderValue, $borderRadiusValue, $color) {
+
+    @if $backgroundColor == 'default' {
+        background-color: $orange-color;
+    }
+    @else {
+        background-color: $backgroundColor;
+    }
+
+    @if $paddingValue == 'default' {
+        padding: 14px 10px;
+    } 
+    @else {
+        padding: $paddingValue;
+    }
+
+    @if $marginValue == 'default' {
+        margin: 5px 0 20px 0;
+    }
+    @else {
+        margin: $marginValue;
+    }
+
+    @if $borderValue == 'default' {
+        border: 0;
+        box-shadow:inset 0px 0px 0px 1px $chocolate-color;
+    }
+    @else {
+        border: $borderValue;
+    }
+
+    @if $borderRadiusValue == 'default' {
+        border-radius: 5px;
+    }
+    @else {
+        border-radius: $borderRadiusValue;
+    }
+
+    @if $color == 'default' {
+        color: $chocolate-color;
+    }
+    @else {
+        color: $color;
+    }
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: box-shadow 0.3s;
+
+    &:focus {
+        outline: none;
+        box-shadow:inset 0px 0px 0px 3px $chocolate-color;
+        transition: box-shadow 0.3s;
+    }
+}
+
+@mixin centralizer($positionvalue) {
+
+    position: $positionvalue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin gridCreation($templateValue, $columnsRowsAmount, $columnsRowsSize, $gapvalue) {
+
+    @if $templateValue == 'column'{
+        display: grid;
+        grid-template-columns: repeat($columnsRowsAmount, $columnsRowsSize);
+        grid-gap: $gapvalue;
+    }
+    @if $templateValue == 'row'{
+        display: grid;
+        grid-template-rows: repeat($columnsRowsAmount, $columnsRowsSize);
+        grid-gap: $gapvalue;
+    }
+}
+
+@mixin centerPosition($justifycontentvalue, $alignitemsvalue) {
+
+    display: flex;
+    @if $justifycontentvalue != none {
+        justify-content: $justifycontentvalue;
+    }
+    @if $alignitemsvalue != none {
+        align-items: $alignitemsvalue;
+    }
+}
