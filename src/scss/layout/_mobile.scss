@@ -36,3 +36,7 @@ a {
     font-size: 0.625rem;
     line-height: 13px;
 }
+
+body {
+    @include gridCreation(column, 2, 1fr, 10px);
+}
