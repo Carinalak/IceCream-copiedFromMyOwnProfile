@@ -1,0 +1,72 @@
+.product_container {
+    margin: auto;
+    margin-top: 48px;
+    @include gridCreation(column, 1, 1fr, 0);
+
+    .product_card {
+        @include centerPosition(center, center);
+        flex-direction: column;
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 17px;
+
+        .product_img {
+            @include boxShadow(product, 0, 0, 0, 0, none);
+            @include backgroundurl(var(--bg-img), cover, no-repeat, center);
+        }
+
+        .description_plate {
+            @include boxShadow(product, 0, 0, 0, 0, none);
+            @include centerPosition(center, center);
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: fit-content;
+            padding: 10px 20px;
+
+            .product_title {
+                font-family: 'Sigmar One', sans-serif;
+                font-size: 1rem;
+                margin: 0;
+            }
+        }
+    }
+
+    .product_card_circle {
+        row-gap: 8px;
+
+        .product_img {
+            height: 133px;
+            width: 133px;
+            border-radius: 50%;
+        }
+
+        .description_plate {
+            background-color: $lemon-color;
+            border-radius: 20px;
+
+            .product_title {
+                color: $strawberry-color;
+                @include textShadow(none, 2px, 2px, 4px, $chocolate-color);
+            }
+        }
+    }
+
+    .product_card_square {
+        row-gap: 12px;
+
+        .product_img {
+            height: 133px;
+            width: 133px;
+            border-radius: 10px;
+        }
+
+        .description_plate {
+            background-color: $orange-color;
+            border-radius: 10px;
+
+            .product_title {
+                color: $chocolate-color;
+            }
+        }
+    }
+}
