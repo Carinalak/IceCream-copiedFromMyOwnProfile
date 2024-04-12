@@ -43,3 +43,7 @@ a {
     line-height: 13px;
     margin-bottom: 0;
 }
+
+main {
+    grid-column: 1 / span 2;
+}
