@@ -8,6 +8,9 @@ export default function renderProducts(products) {
         const productCard = document.createElement('div');
         productCard.classList.add('product_card');
 
+        // remove this after styling!!!!!!!!!!
+        productCard.classList.add('highlight_card');
+
         productCard.classList.add(
             index % 2 === 0 ? 'product_card_circle' : 'product_card_square',
         );
@@ -16,7 +19,6 @@ export default function renderProducts(products) {
         const img = document.createElement('div');
         img.classList.add('product_img');
         img.style.setProperty('--bg-img', `url(${product.imgUrl})`);
-        /*    img.style.backgroundImage = `url(${product.imgUrl})`; */
         productCard.appendChild(img);
 
         const descriptionPlate = document.createElement('div');
@@ -32,7 +34,7 @@ export default function renderProducts(products) {
 
         const allIngredients = document.createElement('p');
         allIngredients.classList.add('ingredients');
-        allIngredients.classList.add('hidden');
+        /*         allIngredients.classList.add('hidden'); */
         allIngredients.innerText = `Ingredients: ${ingredientsInText}`;
         descriptionPlate.appendChild(allIngredients);
 
