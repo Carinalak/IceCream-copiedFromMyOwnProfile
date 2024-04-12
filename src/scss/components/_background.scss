@@ -3,6 +3,7 @@ body {
     max-height: 100%;
     position: relative;
 }
+
 .wave_container {
     position: fixed;
     bottom: 0;
@@ -16,6 +17,7 @@ body {
         height: 95px;
     
     }
+
     .wave_background_light {
         position: absolute;
         bottom: 24px;
@@ -24,6 +26,7 @@ body {
         opacity: 50%;
         z-index: 1;
     }
+    
     .wave_background_dark {
         @include backgroundurl (url(/img/animations/wavesGlory.svg), cover, no-repeat, center center);
         position: absolute;
