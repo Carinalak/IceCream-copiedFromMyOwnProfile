@@ -1,0 +1,94 @@
+.contact_us_container {
+    padding: 0 26px;
+
+    h2 {
+        color: $orange-color;
+        @include textShadow(title, 0, 0, 0, 0);
+        margin: 25px 0 45px 0;
+    }
+
+    .input_title {
+        margin: 0 0 5px 6px;
+        color: $chocolate-color;
+
+        .request_section {
+            color: $red-color;
+        }
+    }
+
+    .input_container {
+        .contact_us_input {
+            @include inputField(
+                default,
+                default,
+                0 0 0 6px,
+                default,
+                default,
+                default
+            );
+            height: 31px;
+            width: 131px;
+        }
+
+        .bigger_input {
+            width: 163.81px;
+        }
+
+        .input_message {
+            color: $red-color;
+            margin: 0 0 15px 6px;
+        }
+    }
+
+    .contact_us_textarea {
+        @include inputField(
+            default,
+            default,
+            0 0 0 6px,
+            default,
+            default,
+            default
+        );
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        resize: none;
+    }
+
+    .buttons_container {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0;
+
+        .primary_button {
+            @include buttonReset(
+                $buttonPrimary-default,
+                default,
+                0 0 0 10px,
+                default,
+                2rem,
+                $button-text
+            );
+            flex: 1;
+
+            &:focus {
+                background-color: $buttonPrimary-clicked;
+            }
+        }
+
+        .secondary_button {
+            @include buttonReset(
+                $buttonSecondary-default,
+                default,
+                0 0 0 6px,
+                default,
+                2rem,
+                $buttonSecondary-text
+            );
+            flex: 1;
+
+            &:focus {
+                background-color: $buttonSecondary-clicked;
+            }
+        }
+    }
+}
