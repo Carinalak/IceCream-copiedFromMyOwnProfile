@@ -1,0 +1,57 @@
+body {
+    background-color: $lemon-color;
+}
+
+.background {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 0;
+
+    .pink_circle {
+        position: fixed;
+        top: 15vh;
+        left: -15vw;
+        transform: scale(1.2);
+    }
+
+    .orange_circle {
+        position: fixed;
+        bottom: 25vh;
+        right: -10vw;
+        transform: scale(1.3);
+    }
+
+    .wave_background {
+        width: 100%;
+        height: 100px;
+    }
+
+    .wave_background_light {
+        position: absolute;
+        bottom: 24px;
+        left: 0;
+        @include backgroundurl(
+            url(/img/animations/wavesGlory.svg),
+            cover,
+            no-repeat,
+            center center
+        );
+        opacity: 50%;
+        z-index: -2;
+    }
+
+    .wave_background_dark {
+        @include backgroundurl(
+            url(/img/animations/wavesGlory.svg),
+            cover,
+            no-repeat,
+            center center
+        );
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
