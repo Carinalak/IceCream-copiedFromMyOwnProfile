@@ -1,9 +1,13 @@
 export default function renderProducts(products) {
     const container = document.querySelector('#productContainer');
 
-    products.forEach((product) => {
+    products.forEach((product, index) => {
         const productCard = document.createElement('div');
         productCard.classList.add('product_card');
+
+        productCard.classList.add(
+            index % 2 === 0 ? 'product_card_circle' : 'product_card_square',
+        );
 
         const img = document.createElement('img');
         img.classList.add('product_img');
@@ -24,8 +28,9 @@ export default function renderProducts(products) {
 
         const allIngredients = document.createElement('p');
         allIngredients.classList.add('ingredients');
+        allIngredients.classList.add('hidden');
         allIngredients.innerText = `Ingredients: ${ingredientsInText}`;
-        productCard.appendChild(allIngredients);
+        descriptionPlate.appendChild(allIngredients);
 
         container.appendChild(productCard);
     });
