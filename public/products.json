@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "name": "Vanilla",
+        "ingredients": ["Milk", "Cream", "Sugar", "Vanilla Extract"],
+        "imgUrl": "/productphotos/vanilla.webp",
+        "imgAlt": "Vanilla Ice Cream"
+    },
+    {
+        "id": 2,
+        "name": "Chocolate",
+        "ingredients": ["Milk", "Cream", "Sugar", "Cocoa Powder"],
+        "imgUrl": "/productphotos/chocolate.webp",
+        "imgAlt": "Chocolate Ice Cream"
+    },
+    {
+        "id": 3,
+        "name": "Strawberry",
+        "ingredients": ["Milk", "Cream", "Sugar", "Strawberries"],
+        "imgUrl": "/productphotos/strawberry.webp",
+        "imgAlt": "Strawberry Ice Cream"
+    },
+    {
+        "id": 4,
+        "name": "Mint Chocolate Chip",
+        "ingredients": [
+            "Milk",
+            "Cream",
+            "Sugar",
+            "Mint Extract",
+            "Chocolate Chips"
+        ],
+        "imgUrl": "/productphotos/mint-chocolate-chip.webp",
+        "imgAlt": "Mint Chocolate Chip Ice Cream"
+    },
+    {
+        "id": 5,
+        "name": "Cookie Dough",
+        "ingredients": ["Milk", "Cream", "Sugar", "Cookie Dough Chunks"],
+        "imgUrl": "/productphotos/cookie-dough.webp",
+        "imgAlt": "Cookie Dough Ice Cream"
+    },
+    {
+        "id": 6,
+        "name": "Cookies and Cream",
+        "ingredients": ["Milk", "Cream", "Sugar", "Chocolate Sandwich Cookies"],
+        "imgUrl": "/productphotos/cookies-cream.webp",
+        "imgAlt": "Cookies and Cream Ice Cream"
+    },
+    {
+        "id": 7,
+        "name": "Pistachio",
+        "ingredients": ["Milk", "Cream", "Sugar", "Pistachio Nuts"],
+        "imgUrl": "/productphotos/pistachio.webp",
+        "imgAlt": "Pistachio Ice Cream"
+    },
+    {
+        "id": 8,
+        "name": "Matcha",
+        "ingredients": [
+            "Milk",
+            "Cream",
+            "Sugar",
+            "Matcha"
+        ],
+        "imgUrl": "/productphotos/matcha.webp",
+        "imgAlt": "Matcha Ice Cream"
+    },
+    {
+        "id": 9,
+        "name": "Caramel Swirl",
+        "ingredients": ["Milk", "Cream", "Sugar", "Caramel Sauce"],
+        "imgUrl": "/productphotos/caramel-swirl.webp",
+        "imgAlt": "Caramel Swirl Ice Cream"
+    },
+    {
+        "id": 10,
+        "name": "Peanut Butter",
+        "ingredients": ["Milk", "Cream", "Sugar", "Peanut Butter"],
+        "imgUrl": "/productphotos/peanut-butter.webp",
+        "imgAlt": "Peanut Butter Ice Cream"
+    },
+    {
+        "id": 11,
+        "name": "Raspberry Ripple",
+        "ingredients": ["Milk", "Cream", "Sugar", "Raspberry Sauce"],
+        "imgUrl": "/productphotos/raspberry-ripple.webp",
+        "imgAlt": "Raspberry Ripple Ice Cream"
+    }
+]

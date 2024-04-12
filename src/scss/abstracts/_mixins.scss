@@ -1,71 +1,82 @@
-@mixin backgroundurl ($Backgroundimageurl, $Backgroundsizevalue, $Backgroundrepeatvalue, $Backgroundpositionvalue){
+@mixin backgroundurl(
+    $Backgroundimageurl,
+    $Backgroundsizevalue,
+    $Backgroundrepeatvalue,
+    $Backgroundpositionvalue
+) {
     background-image: $Backgroundimageurl;
-    
+
     @if $Backgroundsizevalue != none {
         background-size: $Backgroundsizevalue;
     }
-    
+
     @if $Backgroundrepeatvalue != none {
         background-repeat: $Backgroundrepeatvalue;
     }
-    
+
     @if $Backgroundpositionvalue != none {
         background-position: $Backgroundpositionvalue;
     }
 }
 
-@mixin buttonReset($backgroundColor, $paddingValue, $marginValue, $borderValue, $borderRadiusValue, $colorValue) {
-
+@mixin buttonReset(
+    $backgroundColor,
+    $paddingValue,
+    $marginValue,
+    $borderValue,
+    $borderRadiusValue,
+    $colorValue
+) {
     @if $backgroundColor == 'none' {
         background-color: transparent;
-    }
-    @else {
+    } @else {
         background-color: $backgroundColor;
     }
 
     @if $paddingValue == 'default' {
         padding: 18px 55px;
-    }
-    @else {
+    } @else {
         padding: $paddingValue;
     }
 
     @if $marginValue == 'default' {
         margin: 0;
-    }
-    @else {
+    } @else {
         margin: $marginValue;
     }
 
     @if $borderValue == 'default' {
         border: 0;
-    }
-    @else {
+    } @else {
         border: $borderValue;
     }
 
     @if $borderRadiusValue == 'default' {
         border-radius: 20px;
-    }
-    @else {
+    } @else {
         border-radius: $borderRadiusValue;
     }
 
     @if $colorValue == 'default' {
         color: $button-text;
-    }
-    @else {
+    } @else {
         color: $colorValue;
     }
 
     cursor: pointer;
 }
 
-@mixin boxShadow($dropShadow, $offsetX, $offsetY, $blurRadius, $spreadRadius, $color) {
-    
+@mixin boxShadow(
+    $dropShadow,
+    $offsetX,
+    $offsetY,
+    $blurRadius,
+    $spreadRadius,
+    $color
+) {
     @if $dropShadow == 'button' {
         box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.25);
-    } 
+    }
     @if $dropShadow == 'header' {
         box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
@@ -74,67 +85,64 @@
     }
     @if $dropShadow == 'product' {
         box-shadow: 1px 4px 4px 0 rgba(0, 0, 0, 0.25);
-    }
-    @else {
+    } @else {
         box-shadow: $offsetX, $offsetY, $blurRadius, $spreadRadius, $color;
     }
 }
 
 @mixin textShadow($dropShadow, $offsetX, $offsetY, $blurRadius, $color) {
-    
     @if $dropShadow == 'title' {
-        box-shadow: 0px 4px 4px $chocolate-color;
-    } 
+        text-shadow: 0px 4px 4px $chocolate-color;
+    }
     @if $dropShadow == 'titleBrown' {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    } 
-    @else {
-        box-shadow: $offsetX, $offsetY, $blurRadius, $color;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    } @else {
+        text-shadow: $offsetX, $offsetY, $blurRadius, $color;
     }
 }
 
-@mixin inputField($backgroundColor, $paddingValue, $marginValue, $borderValue, $borderRadiusValue, $color) {
-
+@mixin inputField(
+    $backgroundColor,
+    $paddingValue,
+    $marginValue,
+    $borderValue,
+    $borderRadiusValue,
+    $color
+) {
     @if $backgroundColor == 'default' {
         background-color: $orange-color;
-    }
-    @else {
+    } @else {
         background-color: $backgroundColor;
     }
 
     @if $paddingValue == 'default' {
         padding: 14px 10px;
-    } 
-    @else {
+    } @else {
         padding: $paddingValue;
     }
 
     @if $marginValue == 'default' {
         margin: 5px 0 20px 0;
-    }
-    @else {
+    } @else {
         margin: $marginValue;
     }
 
     @if $borderValue == 'default' {
         border: 0;
-        box-shadow:inset 0px 0px 0px 1px $chocolate-color;
-    }
-    @else {
+        box-shadow: inset 0px 0px 0px 1px $chocolate-color;
+    } @else {
         border: $borderValue;
     }
 
     @if $borderRadiusValue == 'default' {
         border-radius: 5px;
-    }
-    @else {
+    } @else {
         border-radius: $borderRadiusValue;
     }
 
     @if $color == 'default' {
         color: $chocolate-color;
-    }
-    @else {
+    } @else {
         color: $color;
     }
 
@@ -144,27 +152,30 @@
 
     &:focus {
         outline: none;
-        box-shadow:inset 0px 0px 0px 3px $chocolate-color;
+        box-shadow: inset 0px 0px 0px 3px $chocolate-color;
         transition: box-shadow 0.3s;
     }
 }
 
 @mixin centralizer($positionvalue) {
-
     position: $positionvalue;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-@mixin gridCreation($templateValue, $columnsRowsAmount, $columnsRowsSize, $gapvalue) {
-
-    @if $templateValue == 'column'{
+@mixin gridCreation(
+    $templateValue,
+    $columnsRowsAmount,
+    $columnsRowsSize,
+    $gapvalue
+) {
+    @if $templateValue == 'column' {
         display: grid;
         grid-template-columns: repeat($columnsRowsAmount, $columnsRowsSize);
         grid-gap: $gapvalue;
     }
-    @if $templateValue == 'row'{
+    @if $templateValue == 'row' {
         display: grid;
         grid-template-rows: repeat($columnsRowsAmount, $columnsRowsSize);
         grid-gap: $gapvalue;
@@ -172,7 +183,6 @@
 }
 
 @mixin centerPosition($justifycontentvalue, $alignitemsvalue) {
-
     display: flex;
     @if $justifycontentvalue != none {
         justify-content: $justifycontentvalue;

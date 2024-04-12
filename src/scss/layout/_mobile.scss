@@ -1,3 +1,7 @@
+body {
+    @include gridCreation(column, 2, 1fr, 20px);
+}
+
 h1 {
     font-size: 2.5rem;
 }
@@ -10,10 +14,11 @@ h3 {
     font-size: 1rem;
 }
 
-h4, h5 {
+h4,
+h5 {
     font-size: 0.75rem;
 }
- 
+
 .button_text {
     font-size: 1.25rem;
 }
@@ -23,16 +28,18 @@ p {
     line-height: 21px;
     margin-bottom: 28px;
 }
- 
+
 a {
     font-size: 0.75rem;
     line-height: 21px;
 }
 
-.placeholder_text, .cookies_text {
+.placeholder_text,
+.cookies_text {
     font-size: 0.75rem;
 }
 .footer_text {
     font-size: 0.625rem;
     line-height: 13px;
+    margin-bottom: 0;
 }

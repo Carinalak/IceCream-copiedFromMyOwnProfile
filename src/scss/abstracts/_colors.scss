@@ -1,26 +1,30 @@
-$orange-color: #FFCB85;
-$chocolate-color: #6B3E26;
-$strawberry-color: #FFC5D9;
-$mint-color: #C2F2D0;
-$lemon-color: #FDF5C9;
+$orange-color: #ffcb85;
+$chocolate-color: #6b3e26;
+$strawberry-color: #ffc5d9;
+$mint-color: #c2f2d0;
+$lemon-color: #fdf5c9;
 
 $white-color: #fff;
-$red-color: #DB5108;
+$red-color: #db5108;
 
-$buttonPrimary-default:#6B3E26;
-$buttonPrimary-hover:#3D2113;
-$buttonPrimary-clicked:#251B15;
-$buttonPrimary-disabled:#454545;
+$menuButton-default: #6b3e26;
+$menuButton-hover: #6b3e26b3;
+$menuButton-clicked: #783e52;
 
-$buttonSecondary-default:#FFC5D9;
-$buttonSecondary-hover:#FF92B8;
-$buttonSecondary-clicked:#FF4887;
-$buttonSecondary-disabled:#454545;
+$buttonPrimary-default: #6b3e26;
+$buttonPrimary-hover: #3d2113;
+$buttonPrimary-clicked: #251b15;
+$buttonPrimary-disabled: #454545;
 
-$link-default:#FFC5D9;
-$link-hover:#FF92B8;
-$link-clicked:#FF4887;
-$link-disabled:#A7A4A4;
+$buttonSecondary-default: #ffc5d9;
+$buttonSecondary-hover: #ff92b8;
+$buttonSecondary-clicked: #ff4887;
+$buttonSecondary-disabled: #454545;
+
+$link-default: #6b3e26;
+$link-hover: #fe4786;
+$link-clicked: #b81bd0;
+$link-disabled: #a7a4a4;
 
 $button-text: #fff;
-$button-text-disabled: #A7A4A4;
+$buttonSecondary-text: #3d2113;
