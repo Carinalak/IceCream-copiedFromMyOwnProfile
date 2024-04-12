@@ -1,3 +1,6 @@
+import highlightProducts from './highlightProduct';
+import removeHighlightProducts from './removeHighlightProducts';
+
 export default function renderProducts(products) {
     const container = document.querySelector('#productContainer');
 
@@ -9,10 +12,11 @@ export default function renderProducts(products) {
             index % 2 === 0 ? 'product_card_circle' : 'product_card_square',
         );
 
-        const img = document.createElement('img');
+        // TODO: aria-label for img?
+        const img = document.createElement('div');
         img.classList.add('product_img');
-        img.src = product.imgUrl;
-        img.alt = product.imgAlt;
+        img.style.setProperty('--bg-img', `url(${product.imgUrl})`);
+        /*    img.style.backgroundImage = `url(${product.imgUrl})`; */
         productCard.appendChild(img);
 
         const descriptionPlate = document.createElement('div');
@@ -31,6 +35,11 @@ export default function renderProducts(products) {
         allIngredients.classList.add('hidden');
         allIngredients.innerText = `Ingredients: ${ingredientsInText}`;
         descriptionPlate.appendChild(allIngredients);
+
+        productCard.addEventListener('mouseenter', highlightProducts);
+        productCard.addEventListener('touchstart', highlightProducts);
+        productCard.addEventListener('mouseleave', removeHighlightProducts);
+        productCard.addEventListener('touchend', removeHighlightProducts);
 
         container.appendChild(productCard);
     });
