@@ -9,6 +9,7 @@
         width: fit-content;
         margin: auto;
         margin-bottom: 17px;
+        min-height: 265px;
 
         .product_img {
             @include boxShadow(product, 0, 0, 0, 0, none);
@@ -66,6 +67,49 @@
 
             .product_title {
                 color: $chocolate-color;
+            }
+        }
+    }
+
+    .highlight_card.product_card {
+        .ingredients {
+            margin: 0;
+        }
+        .product_img {
+            height: calc(1.6 * 133px);
+            width: calc(1.6 * 133px);
+        }
+        .description_plate {
+            margin-top: -40px;
+            .product_title {
+                font-size: calc(2 * 1rem);
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .highlight_card.product_card_circle {
+        .product_img {
+            border: 10px solid $orange-color;
+        }
+
+        .description_plate {
+            border: 3px solid $orange-color;
+
+            .product_title {
+            }
+        }
+    }
+
+    .highlight_card.product_card_square {
+        .product_img {
+            border: 10px solid $strawberry-color;
+        }
+
+        .description_plate {
+            border: 3px solid $chocolate-color;
+
+            .product_title {
             }
         }
     }
