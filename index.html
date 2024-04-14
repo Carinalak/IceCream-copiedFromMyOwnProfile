@@ -1,82 +1,120 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Sigmar+One&display=swap"
+            rel="stylesheet"
+        />
+        <title>Glory</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Sigmar+One&display=swap"
-        rel="stylesheet" />
-    <title>Glory</title>
-</head>
+    <body>
+        <header class="header_container">
+            <h1 class="header_title">Ice cream</h1>
+            <nav class="nav_container">
+                <h5 class="nav_option">Flavors</h5>
+                <h5 class="nav_option">Sign up</h5>
+                <h5 class="nav_option">Contact us</h5>
+            </nav>
+        </header>
+        <main>
+            <div id="productContainer" class="product_container"></div>
 
-<body>
-    <header class="header_container">
-        <h1 class="header_title">Ice cream</h1>
-        <nav class="nav_container">
-            <h5 class="nav_option">Flavors</h5>
-            <h5 class="nav_option">Sign up</h5>
-            <h5 class="nav_option">Contact us</h5>
-        </nav>
-    </header>
-    <main>
-        <div id="productContainer" class="product_container"></div>
+            <div class="about_container"></div>
 
-        <div class="about_container"></div>
+            <section class="contact_container">
+                <div id="contactUsContainer" class="contact_us_container">
+                    <h2 class="container_title">Contact us</h2>
+                </div>
+            </section>
 
-        <section class="contact_container">
-            <div id="contactUsContainer" class="contact_us_container">
-                <h2 class="container_title">Contact us</h2>
+            <div id="cookiesBar" class="cookies_bar">
+                <p class="cookies_text">
+                    By using this site, you agree to our use of cookies.
+                </p>
+                <button id="cookiesBtn" class="cookies_btn">Accept</button>
             </div>
+        </main>
+        <section class="background">
+            <article class="pink_circle">
+                <svg
+                    id="pinkCircle"
+                    width="200"
+                    height="200"
+                    viewBox="0 0 200 200"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <circle
+                        cx="100"
+                        cy="100"
+                        r="100"
+                        fill="#FFC5D9"
+                        fill-opacity="0.5"
+                    />
+                </svg>
+            </article>
+            <article class="orange_circle">
+                <svg
+                    id="orangeCircle"
+                    width="200"
+                    height="200"
+                    viewBox="0 0 200 200"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <circle
+                        cx="100"
+                        cy="100"
+                        r="100"
+                        fill="#FFCB85"
+                        fill-opacity="0.5"
+                    />
+                </svg>
+            </article>
+            <article class="wave_container">
+                <div class="wave_background wave_background_light"></div>
+                <div class="wave_background wave_background_dark"></div>
+            </article>
         </section>
 
-        <div id="cookiesBar" class="cookies_bar"></div>
-    </main>
-    <section class="background">
-        <article class="pink_circle">
-            <svg id="pinkCircle" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="100" cy="100" r="100" fill="#FFC5D9" fill-opacity="0.5"/>
-            </svg>
-        </article>
-        <article class="orange_circle">
-            <svg id="orangeCircle" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="100" cy="100" r="100" fill="#FFCB85" fill-opacity="0.5"/>
-            </svg>
-        </article>
-        <article class="wave_container">
-            <div class="wave_background wave_background_light">
+        <footer>
+            <div class="footer_contact_container">
+                <h6>Contact:</h6>
+                <div class="footer_address">
+                    <p class="footer_text">Drottninggatan 31</p>
+                    <p class="footer_text">184 50 Stockholm</p>
+                </div>
+                <div class="footer_number_email">
+                    <p class="footer_text">073 555 88 88</p>
+                    <p class="footer_text">info@icecream.com</p>
+                </div>
             </div>
-            <div class="wave_background wave_background_dark">
+            <div class="footer_icon_container">
+                <figure>
+                    <img
+                        src="img/socialmediaicons/iconmonstr-instagram-13-240(2) 2(1).png"
+                        alt=""
+                    />
+                </figure>
+                <figure>
+                    <img
+                        src="img/socialmediaicons/iconmonstr-facebook-3-240(3) 2.png"
+                        alt=""
+                    />
+                </figure>
+                <figure>
+                    <img
+                        src="img/socialmediaicons/iconmonstr-snapchat-3-240(2) 2.png"
+                        alt=""
+                    />
+                </figure>
             </div>
-        </article>
-    </section>
-
-    <footer>
-        <div class="footer_contact_container">
-            <h6>Contact:</h6>
-            <div class="footer_address">
-                <p class="footer_text">Drottninggatan 31</p>
-                <p class="footer_text">184 50 Stockholm</p>
-            </div>
-            <div class="footer_number_email">
-                <p class="footer_text">073 555 88 88</p>
-                <p class="footer_text">info@icecream.com</p>
-            </div>
-        </div>
-        <div class="footer_icon_container">
-            <figure>
-                <img src="img/socialmediaicons/iconmonstr-instagram-13-240(2) 2(1).png" alt="" />
-            </figure>
-            <figure>
-                <img src="img/socialmediaicons/iconmonstr-facebook-3-240(3) 2.png" alt="" />
-            </figure>
-            <figure>
-                <img src="img/socialmediaicons/iconmonstr-snapchat-3-240(2) 2.png" alt="" />
-            </figure>
-        </div>
-    </footer>
-    <script type="module" src="/main.js"></script>
-</body>
-
+        </footer>
+        <script type="module" src="/main.js"></script>
+    </body>
 </html>

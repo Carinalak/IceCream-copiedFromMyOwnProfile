@@ -1,0 +1,33 @@
+.cookies_bar {
+    position: fixed;
+    padding: 0 10px 0 10px;
+    width: 100%;
+    min-height: 80px;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: $orange_color;
+    display: flex;
+    flex-direction: row;
+    .cookies_text {
+        color: $chocolate-color;
+        margin: 10px;
+    }
+
+    .cookies_btn {
+        width: 100px;
+        margin: 0 0 0 10px;
+        @include buttonReset(
+            $buttonPrimary-default,
+            default,
+            0 0 0 10px,
+            default,
+            2rem,
+            $button-text
+        );
+
+        &:focus {
+            background-color: $buttonPrimary-clicked;
+        }
+    }
+}
