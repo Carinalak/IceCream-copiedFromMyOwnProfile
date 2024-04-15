@@ -97,13 +97,14 @@
     .news_letter_container {
         padding: 0 26px;
         .news_letter_title {
+            line-height: 40px;
             color: $chocolate-color;
             @include textShadow(title, 0, 0, 0, 0);
             margin: 25px 0 45px 0;
         }
 
         .news_letter_input_title {
-            margin: 0 0 5px 6px;
+            margin: 0 0 10px 6px;
             color: $chocolate-color;
 
             .request_section {
@@ -111,6 +112,22 @@
             }
         }
 
+        .news_letter_input_container {
+            margin-bottom: 20px;
+
+            input {
+                @include inputField(
+                    default,
+                    default,
+                    0 0 0 6px,
+                    default,
+                    default,
+                    default
+                );
+                height: 31px;
+                width: 163px;
+            }
+        }
         .news_letter_btn {
             @include buttonReset(
                 $buttonPrimary-default,
@@ -120,7 +137,6 @@
                 2rem,
                 $button-text
             );
-            flex: 1;
 
             &:focus {
                 background-color: $buttonPrimary-clicked;
