@@ -1,7 +1,6 @@
 function removeCookieBar() {
     const cookiesBarContainer = document.getElementById('cookiesBar');
-    cookiesBarContainer.innerHTML = '';
-    cookiesBarContainer.style.backgroundColor = 'transparent';
+    cookiesBarContainer.remove();
 }
 
 export default function cookieBar() {
