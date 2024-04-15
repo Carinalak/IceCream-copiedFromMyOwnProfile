@@ -110,3 +110,7 @@ textarea:not([rows]) {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.hidden {
+    display: none !important;
+}
