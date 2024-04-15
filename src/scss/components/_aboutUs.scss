@@ -1,0 +1,13 @@
+.about_container {
+    padding: 0 26px;
+
+    h2 {
+        color: $orange-color;
+        @include textShadow(title, 0, 0, 0, 0);
+        margin: 25px 0 45px 0;
+    }
+
+    a:active {
+        color: $link-clicked;
+    }
+}
