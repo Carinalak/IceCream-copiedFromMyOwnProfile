@@ -12,7 +12,7 @@ h3 {
 
 .button_text,
 h4 {
-    font-size: 1.563rem;
+    font-size: 1.536rem;
 }
 
 .placeholder_text {
@@ -48,6 +48,13 @@ body {
 
 main {
     grid-column: span 4;
+}
+
+.header_container {
+    grid-column: span 4;
+    height: 145px;
+    border-radius: 60px;
+    margin: 0 85px;
 }
 
 .contact_container {
