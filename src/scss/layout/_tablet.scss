@@ -1,18 +1,18 @@
 h1 {
-    font-size: 4.3rem;
+    font-size: 5rem;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 4.375rem;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 3.125rem;
 }
 
 .button_text,
 h4 {
-    font-size: 1rem;
+    font-size: 1.536rem;
 }
 
 .placeholder_text {
@@ -22,7 +22,7 @@ h4 {
 .cookies_text,
 .footer_text,
 h5 {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .footer_text {
@@ -43,15 +43,16 @@ p {
 }
 
 body {
-    @include gridCreation(column, 8, 1fr, 20px);
+    @include gridCreation(column, 4, 1fr, 20px);
 }
 
 main {
-    grid-column: span 8;
+    grid-column: span 4;
 }
 
 .header_container {
-    grid-column: 3 / span 4;
+    grid-column: span 4;
     height: 145px;
     border-radius: 60px;
+    margin: 0 85px;
 }
