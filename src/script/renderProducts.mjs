@@ -7,10 +7,6 @@ export default function renderProducts(products) {
     products.forEach((product, index) => {
         const productCard = document.createElement('div');
         productCard.classList.add('product_card');
-
-        // remove this after styling!!!!!!!!!!
-        productCard.classList.add('highlight_card');
-
         productCard.classList.add(
             index % 2 === 0 ? 'product_card_circle' : 'product_card_square',
         );
@@ -30,18 +26,43 @@ export default function renderProducts(products) {
         name.innerText = product.name;
         descriptionPlate.appendChild(name);
 
-        const ingredientsInText = product.ingredients.join(', ');
-
-        const allIngredients = document.createElement('p');
-        allIngredients.classList.add('ingredients');
-        /*         allIngredients.classList.add('hidden'); */
-        allIngredients.innerText = `Ingredients: ${ingredientsInText}`;
-        descriptionPlate.appendChild(allIngredients);
-
         productCard.addEventListener('mouseenter', highlightProducts);
         productCard.addEventListener('touchstart', highlightProducts);
-        productCard.addEventListener('mouseleave', removeHighlightProducts);
-        productCard.addEventListener('touchend', removeHighlightProducts);
+
+        const productCardBig = document.createElement('div');
+        productCardBig.classList.add('product_card_big');
+        productCardBig.classList.add(
+            index % 2 === 0
+                ? 'product_card_circle_big'
+                : 'product_card_square_big',
+        );
+
+        // TODO: aria-label for img?
+        const imgBig = document.createElement('div');
+        imgBig.classList.add('product_img_big');
+        imgBig.style.setProperty('--bg-img', `url(${product.imgUrl})`);
+        productCardBig.appendChild(imgBig);
+
+        const descriptionPlateBig = document.createElement('div');
+        descriptionPlateBig.classList.add('description_plate_big');
+        productCardBig.appendChild(descriptionPlateBig);
+
+        const nameBig = document.createElement('p');
+        nameBig.classList.add('product_title_big');
+        nameBig.innerText = product.name;
+        descriptionPlateBig.appendChild(nameBig);
+
+        const ingredientsInText = product.ingredients.join(', ');
+
+        const allIngredientsBig = document.createElement('p');
+        allIngredientsBig.classList.add('ingredients');
+        allIngredientsBig.innerText = `Ingredients: ${ingredientsInText}`;
+        descriptionPlateBig.appendChild(allIngredientsBig);
+
+        productCardBig.addEventListener('mouseleave', removeHighlightProducts);
+        productCardBig.addEventListener('touchend', removeHighlightProducts);
+
+        productCard.appendChild(productCardBig);
 
         container.appendChild(productCard);
     });
