@@ -1,18 +1,18 @@
 h1 {
-    font-size: 5rem;
+    font-size: 4.3rem;
 }
 
 h2 {
-    font-size: 4.375rem;
+    font-size: 3rem;
 }
 
 h3 {
-    font-size: 3.125rem;
+    font-size: 2rem;
 }
 
 .button_text,
 h4 {
-    font-size: 1.563rem;
+    font-size: 1rem;
 }
 
 .placeholder_text {
@@ -22,7 +22,7 @@ h4 {
 .cookies_text,
 .footer_text,
 h5 {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .footer_text {
@@ -48,4 +48,10 @@ body {
 
 main {
     grid-column: span 8;
+}
+
+.header_container {
+    grid-column: 3 / span 4;
+    height: 145px;
+    border-radius: 60px;
 }
