@@ -19,14 +19,8 @@
         flex-direction: row;
 
         .nav_option {
-            @include buttonReset(
-                none,
-                0,
-                0 25px 0 0,
-                0,
-                0,
-                $buttonPrimary-default
-            );
+            margin: 0 25px 0 0;
+            color: $buttonPrimary-default;
 
             &:last-child {
                 margin: 0;
