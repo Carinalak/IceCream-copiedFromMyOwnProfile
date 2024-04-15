@@ -1,7 +1,3 @@
-body {
-    @include gridCreation(column, 2, 1fr, 20px);
-}
-
 h1 {
     font-size: 2.5rem;
 }
@@ -35,7 +31,9 @@ a {
 }
 
 .placeholder_text,
+.input_message,
 .cookies_text {
+    font-family: 'Kadwa', serif;
     font-size: 0.75rem;
 }
 .footer_text {
@@ -44,6 +42,10 @@ a {
     margin-bottom: 0;
 }
 
+body {
+    @include gridCreation(column, 2, 1fr, 20px);
+}
+
 main {
-    grid-column: 1 / span 2;
+    grid-column: span 2;
 }
