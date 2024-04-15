@@ -156,7 +156,6 @@
 
     &:focus {
         outline: none;
-        -webkit-appearance: none;
         -webkit-box-shadow: inset 0px 0px 0px 3px $chocolate-color;
         box-shadow: inset 0px 0px 0px 3px $chocolate-color;
         transition: box-shadow 0.3s;
