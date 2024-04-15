@@ -49,3 +49,47 @@ body {
 main {
     grid-column: span 4;
 }
+
+.contact_container {
+    @include gridCreation(column, 4, 1fr, 20px);
+    .contact_us_container {
+        margin: 0 10px;
+        padding: 0;
+        grid-column: 2 / 4;
+
+        .container_title {
+            margin: 35px 0 20px 0;
+        }
+        .input_container {
+            .input_title {
+                margin-bottom: 0;
+            }
+            .contact_us_input {
+                width: 210px;
+            }
+            .bigger_input {
+                width: 260px;
+            }
+        }
+
+        .buttons_container {
+            .primary_button,
+            .secondary_button {
+                flex: 0;
+            }
+        }
+    }
+    .news_letter_container {
+        margin: 5px 10px 200px 10px;
+        padding: 0;
+        grid-column: 2 / 4;
+        .news_letter_title {
+            line-height: 70px;
+        }
+        .news_letter_input_container {
+            #newsLetterEmailInput {
+                width: 300px;
+            }
+        }
+    }
+}

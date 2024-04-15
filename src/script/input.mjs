@@ -6,7 +6,7 @@ export default function printContactUs() {
         const inputContainer = document.createElement('div');
         inputContainer.classList.add('input_container');
 
-        const inputTitle = document.createElement('h3');
+        const inputTitle = document.createElement('h4');
         inputTitle.classList.add('input_title');
         inputTitle.innerHTML = `${inputTitles[i]}<span class="request_section">*</span>`;
 

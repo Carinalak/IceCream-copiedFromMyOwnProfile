@@ -104,7 +104,7 @@
         .news_letter_title {
             line-height: 40px;
             color: $chocolate-color;
-            @include textShadow(title, 0, 0, 0, 0);
+            @include textShadow(titleBrown, 0, 0, 0, 0);
             margin: 25px 0 45px 0;
         }
 
