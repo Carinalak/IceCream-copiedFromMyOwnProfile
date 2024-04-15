@@ -1,6 +1,4 @@
-export default function highlightProducts(event) {
-    const targetedCard = event.currentTarget;
-    const ingredients = targetedCard.querySelector('.ingredients');
-    ingredients.classList.add('hidden');
-    targetedCard.classList.remove('highlight_card');
+export default function removeHighlightProducts(event) {
+    const targetedCardBig = event.currentTarget;
+    targetedCardBig.style.setProperty('opacity', 0);
 }
