@@ -25,7 +25,8 @@
             <div id="productContainer" class="product_container"></div>
 
             <section class="about_container">
-                <article>
+                <article class="about_text_container">
+
                     <h2>about us</h2>
                     <p>
                         Step into our sweet sanctuary, where every scoop is a
@@ -53,51 +54,54 @@
                         scoopful - one indulgence at a time!
                     </p>
                 </article>
-                <article>
+                <article class="ice_cream_container">
                     <svg
-                        id="mySVG"
-                        width="83"
-                        height="120"
-                        viewBox="-10 30 120 100"
-                        fill="none"
+                        class="ice_cream_SVG"
+                        id="iceCreamSVG"
                         xmlns="http://www.w3.org/2000/svg"
+                        width="140"
+                        height="190"
+                        viewBox="-30 -60 140 190"
+                        fill="none"
                     >
                         <path
-                            d="M35.4636 145.604L10.999 53.3656L72.4237 57.6246L35.4636 145.604Z"
+                            d="M27.4051 108.777L8.78275 40.1072L55.5391 43.278L27.4051 108.777Z"
                             fill="#FFCB85"
                             fill-opacity="0.71"
                         />
                         <path
-                            d="M71.6921 58.0751L35.5708 144.058L11.6614 53.9128L71.6921 58.0751Z"
+                            d="M54.8017 43.7291L27.5126 107.261L9.44947 40.6536L54.8017 43.7291Z"
                             stroke="#6B3E26"
                             stroke-opacity="0.5"
                         />
-
-                        <circle
-                            cx="58"
-                            cy="25"
-                            r="25"
+                        <ellipse
+                            cx="44.5598"
+                            cy="18.9895"
+                            rx="19.03"
+                            ry="18.612"
                             fill="#FFC5D9"
                             id="strawberry"
                         />
-                        <circle
-                            cx="25"
-                            cy="33"
-                            r="25"
+                        <ellipse
+                            cx="19.4403"
+                            cy="24.9454"
+                            rx="19.03"
+                            ry="18.612"
                             fill="#6B3E26"
                             id="chocolate"
                         />
-                        <circle
-                            cx="58"
-                            cy="50"
-                            r="25"
+                        <ellipse
+                            cx="44.5598"
+                            cy="37.6016"
+                            rx="19.03"
+                            ry="18.612"
                             fill="#C2F2D0"
                             id="mint"
                         />
                     </svg>
                 </article>
             </section>
-
+          
             <section class="contact_container">
                 <div id="contactUsContainer" class="contact_us_container">
                     <h3 class="container_title">Contact us</h3>
@@ -168,8 +172,34 @@
                 </svg>
             </article>
             <article class="wave_container">
-                <div class="wave_background wave_background_light"></div>
-                <div class="wave_background wave_background_dark"></div>
+                <svg
+                    class="wave_background wave_background_light"
+                    width="319"
+                    height="71"
+                    viewBox="0 0 319 71"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M84.5 36.5973C47.3733 25.7052 28.9395 29.1511 0 51.0973V71.0973H318.5V25.0973C273.713 -1.39761 247.641 -12.2152 184 25.0973C130.578 6.03378 113.669 16.4377 84.5 36.5973Z"
+                        fill="#FFCB85"
+                        stroke="#FFCB85"
+                    />
+                </svg>
+                <svg
+                    class="wave_background wave_background_dark"
+                    width="319"
+                    height="71"
+                    viewBox="0 0 319 71"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M84.5 36.5973C47.3733 25.7052 28.9395 29.1511 0 51.0973V71.0973H318.5V25.0973C273.713 -1.39761 247.641 -12.2152 184 25.0973C130.578 6.03378 113.669 16.4377 84.5 36.5973Z"
+                        fill="#FFCB85"
+                        stroke="#FFCB85"
+                    />
+                </svg>
             </article>
         </section>
 
