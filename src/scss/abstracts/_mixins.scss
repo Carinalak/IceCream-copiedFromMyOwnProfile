@@ -149,10 +149,10 @@
 
     white-space: nowrap;
     text-overflow: ellipsis;
-    transition: box-shadow 0.3s;
     -webkit-appearance: none;
     -webkit-box-shadow: inset 0px 0px 0px 1px $chocolate-color;
     box-shadow: inset 0px 0px 0px 1px $chocolate-color;
+    transition: box-shadow 0.3s;
 
     &:focus {
         outline: none;
