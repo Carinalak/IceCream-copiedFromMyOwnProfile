@@ -41,3 +41,11 @@ p {
     margin-bottom: 45px;
     letter-spacing: 0.8px;
 }
+
+body {
+    @include gridCreation(column, 8, 1fr, 20px);
+}
+
+main {
+    grid-column: span 8;
+}

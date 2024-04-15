@@ -40,3 +40,11 @@ a {
     font-size: 1.25rem;
     line-height: 0.813rem;
 }
+
+body {
+    @include gridCreation(column, 12, 1fr, 20px);
+}
+
+main {
+    grid-column: span 12;
+}
