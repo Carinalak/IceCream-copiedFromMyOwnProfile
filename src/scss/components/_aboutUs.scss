@@ -1,5 +1,6 @@
 .about_container {
     padding: 0 26px;
+    margin-top: 70px;
 
     h2 {
         color: $orange-color;
@@ -9,5 +10,23 @@
 
     a:active {
         color: $link-clicked;
+    }
+
+    .about_text_container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .ice_cream_container {
+        position: relative;
+        z-index: 1;
+        width: fit-content;
+        margin: auto;
+        margin-top: -80px;
+
+        .ice_cream_SVG {
+            transform: rotate(15.283deg);
+            transform-origin: 50% 20%;
+        }
     }
 }
