@@ -2,6 +2,7 @@
     margin: auto;
     margin-top: 48px;
     @include gridCreation(column, 1, 1fr, 0);
+    position: relative;
 
     .product_card {
         @include centerPosition(center, center);
@@ -9,22 +10,26 @@
         width: fit-content;
         margin: auto;
         margin-bottom: 17px;
-        min-height: 265px;
+        position: relative;
 
-        .product_img {
+        .product_img,
+        .product_img_big {
             @include boxShadow(product, 0, 0, 0, 0, none);
             @include backgroundurl(var(--bg-img), cover, no-repeat, center);
         }
 
-        .description_plate {
+        .description_plate,
+        .description_plate_big {
             @include boxShadow(product, 0, 0, 0, 0, none);
             @include centerPosition(center, center);
             flex-direction: column;
             flex-wrap: wrap;
             width: fit-content;
             padding: 10px 20px;
+            text-align: center;
 
-            .product_title {
+            .product_title,
+            .product_title_big {
                 font-family: 'Sigmar One', sans-serif;
                 font-size: 1rem;
                 margin: 0;
@@ -32,85 +37,102 @@
         }
     }
 
-    .product_card_circle {
+    .product_card_circle,
+    .product_card_circle_big {
         row-gap: 8px;
 
-        .product_img {
+        .product_img,
+        .product_img_big {
             height: 133px;
             width: 133px;
             border-radius: 50%;
         }
 
-        .description_plate {
+        .description_plate,
+        .description_plate_big {
             background-color: $lemon-color;
             border-radius: 20px;
 
-            .product_title {
+            .product_title,
+            .product_title_big {
                 color: $strawberry-color;
                 @include textShadow(none, 2px, 2px, 4px, $chocolate-color);
             }
         }
     }
 
-    .product_card_square {
+    .product_card_square,
+    .product_card_square_big {
         row-gap: 12px;
 
-        .product_img {
+        .product_img,
+        .product_img_big {
             height: 133px;
             width: 133px;
             border-radius: 10px;
         }
 
-        .description_plate {
+        .description_plate,
+        .description_plate_big {
             background-color: $orange-color;
             border-radius: 10px;
 
-            .product_title {
+            .product_title,
+            .product_title_big {
                 color: $chocolate-color;
             }
         }
     }
 
-    .highlight_card.product_card {
-        .ingredients {
-            margin: 0;
-        }
-        .product_img {
+    .product_card_big {
+        @include centerPosition(center, center);
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 17px;
+
+        position: absolute;
+
+        opacity: 0;
+        width: fit-content;
+        height: fit-content;
+        transition: opacity 0.4s ease-in-out;
+        z-index: 2;
+
+        .product_img_big {
             height: calc(1.6 * 133px);
             width: calc(1.6 * 133px);
         }
-        .description_plate {
+        .description_plate_big {
             margin-top: -40px;
-            .product_title {
-                font-size: calc(2 * 1rem);
+            position: relative;
+
+            .product_title_big {
+                font-size: 2rem;
                 margin-bottom: 10px;
+            }
+            .ingredients {
+                margin: 0;
             }
         }
     }
 
-    .highlight_card.product_card_circle {
-        .product_img {
+    .product_card_circle_big {
+        .product_img_big {
             border: 10px solid $orange-color;
         }
 
-        .description_plate {
+        .description_plate_big {
             border: 3px solid $orange-color;
-
-            .product_title {
-            }
         }
     }
 
-    .highlight_card.product_card_square {
-        .product_img {
+    .product_card_square_big {
+        .product_img_big {
             border: 10px solid $strawberry-color;
         }
 
-        .description_plate {
+        .description_plate_big {
             border: 3px solid $chocolate-color;
-
-            .product_title {
-            }
         }
     }
 }
