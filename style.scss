@@ -16,7 +16,7 @@
 
 @import '/src/scss/layout/mobile';
 
-@media screen and (min-width: 900px) and (orientation: landscape) {
+@media screen and (min-width: 900px) {
     @import '/src/scss/layout/tablet';
 }
 
