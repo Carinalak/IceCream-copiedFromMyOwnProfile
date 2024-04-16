@@ -57,6 +57,33 @@ main {
     margin: 0 85px;
 }
 
+.about_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 81px;
+    margin-right: 81px;
+    align-items: center;
+    column-gap: 50px;
+    justify-content: space-around;
+
+    .about_title {
+        text-align: center;
+        width: 100%;
+    }
+    .about_text_container {
+        max-width: 490px;
+    }
+    .ice_cream_container {
+        max-width: 219px;
+        margin: 0;
+        transform: scale(3) translateY(-30px);
+
+        .ice_cream_SVG {
+            transform: rotate(15.283deg);
+        }
+    }
+}
+
 .contact_container {
     @include gridCreation(column, 4, 1fr, 20px);
     .contact_us_container {
