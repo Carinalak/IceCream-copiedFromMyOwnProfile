@@ -9,6 +9,8 @@
     background-color: $orange_color;
     display: flex;
     flex-direction: row;
+    z-index: 3;
+
     .cookies_text {
         color: $chocolate-color;
         margin: 10px;
