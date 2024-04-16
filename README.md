@@ -1,42 +1,81 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/IwCr_2o0)
+# Icecream Glory
 
-# ABOUT THE DESIGN
+## Demolink
 
-Välkommen till Glorys designprojekt! Nedan följer en översikt av våra designval och strategier som vi tänkt ska användas för att skapa den visuella identiteten för vår webbplats.
+https://github.com/Medieinstitutet/fed23d-grafiska-verktyg-glory-1
 
-## Designelement:
+## Livelink
 
-### Färger:
-Vi har valt en pastellfärgpalett för att ge webbplatsen en mjuk och inbjudande känsla som ska föra tankarna till glass och sommar. Färgerna används för att framhäva viktiga element och skapa en enhetlig upplevelse för besökarna.
+https://github.com/Medieinstitutet/fed23d-grafiska-verktyg-glory-1
 
-### Typsnitt:
-- **Rubriker:** Vi använder "Sigmar One" för rubriker för att ge en lekfull och markerad stil.
-- **Brödtext:** För brödtext använder vi "Kadwa" för att ge en lättläst och elegant känsla.
+# Application requirements
 
-### Knappar:
-Vi har valt att använda knappar med rundade hörn för att skapa en mjukare och mer tilltalande visuell estetik. Detta bidrar till en mer inbjudande användarupplevelse.
+text
 
-### Meny:
-Menyn består av en tydlig rubrik följt av navigationslänkar för att göra det enkelt för användarna att hitta det de söker.
+- points
 
-### Bakgrund:
-Bakgrunden på vår webbplats är en gul färg med pastelliga cirklar i rosa och orange, som kan ses som glasskulor. Cirklarna ska animeras så de sakta rör sig för att ge en dynamisk och levande känsla till webbapplikationen.
+## Design Authors
+- [@RebeckaGothlin](https://github.com/RebeckaGothlin)
+- [@helenaskagerlid](https://github.com/helenaskagerlid)
+- [@Ogen1998](https://github.com/Ogen1998)
+- [@Carinalak](https://github.com/Carinalak)
 
-### Glassanimation:
-Vi har implementerat en glassanimation där glasskulorna rör sig när användaren hovrar över glassen. Om användaren sen klickar på glassen hoppar glasskulorna upp en bit för att ge en interaktiv och rolig användarupplevelse.
+## Code Authors
+- [@tsemitris](https://github.com/tsemitris)
+- [@Annika-Nyholm](https://github.com/Annika-Nyholm)
+- [@olandstorm](https://github.com/olandstorm)
+- [@alahojat](https://www.github.com/alahojat)
 
-### Hover- och klickeffekter:
-I vår design har vi lagt till hover och klickeffekter på en del av designen. 
-- **Produktbilderna:**  När användaren hovrar på glassen så förstoras bilden, den får en ram och användaren kan läsa om glassens ingredienser. 
-- **Länkar och knappar:** Vid hovring och klick på länkar och knappar skiftar färgerna från olika nyanser av brunt, rosa och svart.
-- **Meny:** Vid hovring över menyn samt vi klick på den ändras färgerna från mörkbrun till ljusbrun, till ljusrosa.
+## Project built with
 
-### Wireframes:
-Mobile version
-![Mobile version](assets/mobile.png)
+![Affinity Designer](https://img.shields.io/badge/affinity%20desginer-%231B72BE.svg?style=for-the-badge&logo=affinity-designer&logoColor=white)
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 
-Tablet version
-![Tablet version](assets/tablet.png)
 
-Desktop version
-![Desktop version](assets/desktop.png)
+## Initial Wireframes
+
+
+
+## Final result
+
+
+
+## Project directory
+
+```
+s
+```
+
+## Start project
+```
+pnpm install
+```
+
+## devDependencies
+```
+eslint
+prettier
+vite
+```
+
+## Dependencies
+
+```
+gsap
+sass
+```
+
+## Lessons learned
+
+text
+
+## Detected bugs
+
+text
