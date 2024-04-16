@@ -6,7 +6,7 @@ export default function animationIceCream() {
     svg.addEventListener('mouseenter', () => {
         if (!isAnimating) {
             isAnimating = true;
-            gsap.to('svg', {
+            gsap.to(svg, {
                 duration: 2,
                 rotation: 3,
                 transformOrigin: '50% 20%',
