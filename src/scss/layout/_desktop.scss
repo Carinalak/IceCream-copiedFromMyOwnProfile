@@ -45,8 +45,6 @@ body {
 }
 
 main {
-    max-width: 1750px;
-    margin: auto;
     grid-column: span 12;
     max-width: 1750px;
     margin: auto;
@@ -88,23 +86,49 @@ main {
 
 .contact_container {
     @include gridCreation(column, 12, 1fr, 20px);
-    max-width: 1130px;
-    margin: 40px auto;
+    margin: 70px auto;
+    max-width: 1500px;
 
     .contact_us_container {
         grid-column: 1 / span 6;
+        margin-left: 40px;
 
         .container_title {
             margin: 0 0 15px 0;
         }
+
+        .input_container {
+            padding-left: 10px;
+
+            .contact_us_input {
+                height: 40px;
+            }
+        }
+
+        .contact_us_textarea {
+            margin-left: 10px;
+        }
+
+        .buttons_container {
+            margin-left: 10px;
+        }
     }
 
     .news_letter_container {
-        grid-column: 8 / span 6;
-        margin: 40px 0 0 0;
+        grid-column: 7 / span 6;
 
         .news_letter_title {
-            margin: 0;
+            margin: 0 0 40px 0;
+        }
+
+        .news_letter_input_container {
+            input {
+                height: 40px;
+            }
+        }
+
+        .news_letter_btn {
+            margin-left: 5px;
         }
     }
 }
@@ -113,5 +137,5 @@ footer {
     grid-column: span 12;
     padding: 15px 80px;
     margin: auto;
-    max-width: 1750px;
+    max-width: 1150px;
 }
