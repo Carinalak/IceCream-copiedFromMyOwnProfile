@@ -61,8 +61,22 @@ main {
 }
 
 .product_container {
-    @include gridCreation(column, 4, 1fr, 20px);
-    margin-top: 135px;
+    @include gridCreation(column, 4, 1fr, 10px);
+    grid-row-gap: 50px;
+    margin: 135px 70px 0 70px;
+    
+    .product_card:nth-child(3) {
+        order: 0;
+    }
+    
+    .product_card:nth-child(6) {
+        order: 0;
+    }
+    
+    .product_card:nth-child(9) {
+        order: 0;
+        grid-column: inherit;
+    }
     
     .product_card:nth-child(n+5):nth-child(-n+7) {
         order: 1;
