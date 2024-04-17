@@ -5,7 +5,7 @@ export default function renderProducts(products) {
     const container = document.querySelector('#productContainer');
 
     products.forEach((product, index) => {
-        const productCard = document.createElement('div');
+        const productCard = document.createElement('article');
         productCard.classList.add('product_card');
         productCard.classList.add(
             index % 2 === 0 ? 'product_card_circle' : 'product_card_square',
@@ -29,7 +29,7 @@ export default function renderProducts(products) {
         productCard.addEventListener('mouseenter', highlightProducts);
         productCard.addEventListener('touchstart', highlightProducts);
 
-        const productCardBig = document.createElement('div');
+        const productCardBig = document.createElement('article');
         productCardBig.classList.add('product_card_big');
         productCardBig.classList.add(
             index % 2 === 0
