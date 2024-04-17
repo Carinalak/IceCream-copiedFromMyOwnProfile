@@ -50,13 +50,12 @@
 
         .description_plate,
         .description_plate_big {
-            background-color: $lemon-color;
+            background-color: $strawberry-color;
             border-radius: 20px;
 
             .product_title,
             .product_title_big {
-                color: $strawberry-color;
-                @include textShadow(none, 2px, 2px, 4px, $chocolate-color);
+                color: $chocolate-color;
             }
         }
     }

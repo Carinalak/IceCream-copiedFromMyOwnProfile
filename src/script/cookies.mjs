@@ -1,6 +1,10 @@
 function removeCookieBar() {
     const cookiesBarContainer = document.getElementById('cookiesBar');
-    cookiesBarContainer.remove();
+    cookiesBarContainer.classList.add('cookies_bar_accepted');
+
+    cookiesBarContainer.addEventListener('transitionend', () => {
+        cookiesBarContainer.remove();
+    });
 }
 
 export default function cookieBar() {
