@@ -47,6 +47,8 @@ body {
 
 main {
     grid-column: span 12;
+    max-width: 1750px;
+    margin: auto;
 }
 
 .header_container {
@@ -55,5 +57,28 @@ main {
 
     .nav_container {
         column-gap: 33px;
+    }
+}
+
+.contact_container {
+    @include gridCreation(column, 12, 1fr, 20px);
+    max-width: 1130px;
+    margin: 40px auto;
+
+    .contact_us_container {
+        grid-column: 1 / span 6;
+
+        .container_title {
+            margin: 0 0 15px 0;
+        }
+    }
+
+    .news_letter_container {
+        grid-column: 8 / span 6;
+        margin: 40px 0 0 0;
+
+        .news_letter_title {
+            margin: 0;
+        }
     }
 }
