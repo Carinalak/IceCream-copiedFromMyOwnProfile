@@ -24,7 +24,6 @@ p {
 
 a {
     font-size: 1.563rem;
-    font-weight: 700;
     line-height: 37px;
 }
 
@@ -55,5 +54,15 @@ main {
 
     .nav_container {
         column-gap: 33px;
+    }
+}
+
+.about_container {
+    .ice_cream_container {
+        transform: scale(3.1) translateY(-30px);
+    }
+
+    .about_text_container {
+        max-width: 685px;
     }
 }
