@@ -101,7 +101,8 @@ main {
 .contact_container {
     @include gridCreation(column, 12, 1fr, 20px);
     margin: 70px auto;
-    max-width: 1500px;
+    padding: 0 55px;
+    max-width: 1750px;
 
     .contact_us_container {
         grid-column: 1 / span 6;
