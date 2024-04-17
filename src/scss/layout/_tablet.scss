@@ -57,6 +57,85 @@ main {
     margin: 0 85px;
 }
 
+.product_container {
+    @include gridCreation(column, 2, 1fr, 20px);
+    margin-top: 135px;
+
+    .product_card {
+
+        .description_plate,
+        .description_plate_big {
+
+            .product_title,
+            .product_title_big {
+                font-size: 1.563rem;
+            }
+        }
+    }
+
+    .product_card_circle,
+    .product_card_circle_big {
+        row-gap: 17px;
+
+        .product_img,
+        .product_img_big {
+            height: 272px;
+            width: 272px;
+        }
+
+        .description_plate,
+        .description_plate_big {
+
+            .product_title,
+            .product_title_big {
+                font-size: 1.563rem;
+            }
+        }
+    }
+
+    .product_card_square,
+    .product_card_square_big {
+        row-gap: 22px;
+
+        .product_img,
+        .product_img_big {
+            height: 250px;
+            width: 250px;
+        }
+    }
+
+    .product_card_big {
+        margin-bottom: 22px;
+
+        .product_img_big {
+            height: calc(1.6 * 272px);
+            width: calc(1.6 * 272px);
+        }
+
+        .description_plate_big {
+
+            .product_title_big {
+                font-size: 3.125rem;
+            }
+            .ingredients {
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    .product_card_circle_big {
+        .product_img_big {
+            border: 20px solid $orange-color;
+        }
+    }
+
+    .product_card_square_big {
+        .product_img_big {
+            border: 20px solid $strawberry-color;
+        }
+    }
+}
+
 .about_container {
     display: flex;
     flex-wrap: wrap;
