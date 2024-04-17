@@ -24,7 +24,6 @@ p {
 
 a {
     font-size: 1.563rem;
-    font-weight: 700;
     line-height: 37px;
 }
 
@@ -45,7 +44,10 @@ body {
     @include gridCreation(column, 12, 1fr, 20px);
 }
 
+
 main {
+    max-width: 1750px;
+    margin: auto;
     grid-column: span 12;
 }
 
@@ -67,5 +69,27 @@ main {
     }
 }
 
+.about_container {
+    justify-content: flex-start;
 
+    .about_title {
+        text-align: left;
+    }
+
+    .ice_cream_container {
+        margin-left: 10vw;
+        transform: scale(3.7) translateY(-30px);
+    }
+
+    .about_text_container {
+        max-width: 685px;
+    }
+}
+
+footer {
+    grid-column: span 12;
+    padding: 15px 80px;
+    margin: auto;
+    max-width: 1750px;
+}
 
