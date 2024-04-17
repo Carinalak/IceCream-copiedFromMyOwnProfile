@@ -160,6 +160,7 @@ main {
     .about_title {
         text-align: center;
         width: 100%;
+        @include textShadow(titleBrown, 0, 0, 0, 0);
     }
     .about_text_container {
         max-width: 490px;
@@ -185,6 +186,7 @@ main {
 
         .container_title {
             margin: 35px 0 20px 0;
+            @include textShadow(titleBrown, 0, 0, 0, 0);
         }
         .input_container {
             .input_title {
@@ -212,6 +214,7 @@ main {
 
         .news_letter_title {
             line-height: 70px;
+            @include textShadow(titleBrown, 0, 0, 0, 0);
         }
         .news_letter_input_container {
             #newsLetterEmailInput {
