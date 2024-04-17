@@ -45,6 +45,15 @@ body {
     @include gridCreation(column, 12, 1fr, 20px);
 }
 
+.header_container {
+    grid-column: span 12;
+    height: 179px;
+
+    .nav_container {
+        column-gap: 33px;
+    }
+}
+
 main {
     grid-column: span 12;
 }
@@ -55,3 +64,4 @@ footer {
     margin: auto;
     max-width: 1750px;
 }
+
