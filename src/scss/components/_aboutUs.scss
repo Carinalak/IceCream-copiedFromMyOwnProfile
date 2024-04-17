@@ -1,6 +1,7 @@
 .about_container {
     padding: 0 26px;
-    margin-top: 70px;
+    max-width: 500px;
+    margin: 70px auto 0 auto;
 
     h2 {
         color: $orange-color;
@@ -15,7 +16,6 @@
     .about_text_container {
         position: relative;
         z-index: 2;
-        max-width: 500px;
     }
 
     .ice_cream_container {
