@@ -48,3 +48,12 @@ body {
 main {
     grid-column: span 12;
 }
+
+.header_container {
+    grid-column: span 12;
+    height: 179px;
+
+    .nav_container {
+        column-gap: 33px;
+    }
+}
