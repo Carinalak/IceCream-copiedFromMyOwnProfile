@@ -48,3 +48,13 @@ body {
 main {
     grid-column: span 12;
 }
+
+.product_container {
+    @include gridCreation(column, 4, 1fr, 20px);
+    margin-top: 135px;
+    max-width: 1750px;
+    
+    .product_card:nth-child(n+5):nth-child(-n+7) {
+        order: 1;
+    }
+}
