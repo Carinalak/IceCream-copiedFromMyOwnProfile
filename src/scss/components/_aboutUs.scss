@@ -5,7 +5,7 @@
     h2 {
         color: $orange-color;
         @include textShadow(title, 0, 0, 0, 0);
-        margin: 25px 0 45px 0;
+        margin: 25px 0 20px 0;
     }
 
     a:active {
