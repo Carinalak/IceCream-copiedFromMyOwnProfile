@@ -60,6 +60,15 @@ main {
     }
 }
 
+.product_container {
+    @include gridCreation(column, 4, 1fr, 20px);
+    margin-top: 135px;
+    
+    .product_card:nth-child(n+5):nth-child(-n+7) {
+        order: 1;
+    }
+}
+
 .about_container {
     justify-content: flex-start;
 
@@ -83,3 +92,4 @@ footer {
     margin: auto;
     max-width: 1750px;
 }
+
