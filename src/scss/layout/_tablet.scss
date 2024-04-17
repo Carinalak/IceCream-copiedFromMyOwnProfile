@@ -46,10 +46,6 @@ body {
     @include gridCreation(column, 4, 1fr, 20px);
 }
 
-main {
-    grid-column: span 4;
-}
-
 .header_container {
     grid-column: span 4;
     height: 145px;
@@ -57,8 +53,13 @@ main {
     margin: 0 85px;
 }
 
+main {
+    grid-column: span 4;
+}
+
 .contact_container {
     @include gridCreation(column, 4, 1fr, 20px);
+
     .contact_us_container {
         margin: 0 10px;
         padding: 0;
@@ -90,6 +91,7 @@ main {
         margin: 5px 10px 200px 10px;
         padding: 0;
         grid-column: 2 / 4;
+
         .news_letter_title {
             line-height: 70px;
         }
@@ -97,6 +99,19 @@ main {
             #newsLetterEmailInput {
                 width: 300px;
             }
+        }
+    }
+}
+
+.cookies_bar {
+    padding: 20px 30px;
+
+    .cookies_text {
+        max-width: 900px;
+
+        .hidden_on_mobile {
+            margin: 0;
+            display: inline;
         }
     }
 }
