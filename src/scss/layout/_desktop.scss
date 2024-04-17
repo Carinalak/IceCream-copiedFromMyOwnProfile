@@ -44,7 +44,6 @@ body {
     @include gridCreation(column, 12, 1fr, 20px);
 }
 
-
 main {
     max-width: 1750px;
     margin: auto;
@@ -63,8 +62,8 @@ main {
 .product_container {
     @include gridCreation(column, 4, 1fr, 20px);
     margin-top: 135px;
-    
-    .product_card:nth-child(n+5):nth-child(-n+7) {
+
+    .product_card:nth-child(n + 5):nth-child(-n + 7) {
         order: 1;
     }
 }
@@ -86,10 +85,41 @@ main {
     }
 }
 
+.background {
+    .waves_tablet {
+        display: none;
+    }
+    .waves_desktop {
+        display: block;
+
+        &.wave_background_light {
+            @include backgroundurl(
+                url('/img/animations/wavesLightGloryDesktop.png'),
+                100% 100%,
+                none,
+                center
+            );
+            height: 345px;
+            width: 100%;
+            bottom: 0;
+        }
+
+        &.wave_background_dark {
+            @include backgroundurl(
+                url('/img/animations/wavesDarkGloryDesktop.png'),
+                100% 100%,
+                none,
+                center
+            );
+            height: 240px;
+            width: 100%;
+        }
+    }
+}
+
 footer {
     grid-column: span 12;
     padding: 15px 80px;
     margin: auto;
     max-width: 1750px;
 }
-
