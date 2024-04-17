@@ -3,9 +3,8 @@
         padding: 0 26px;
 
         .container_title {
-            color: $orange-color;
-            @include textShadow(title, 0, 0, 0, 0);
-            margin: 25px 0 45px 0;
+            color: $chocolate-color;
+            margin: 25px 0 20px 0;
         }
 
         .input_title {
@@ -102,10 +101,8 @@
         padding: 0 26px;
 
         .news_letter_title {
-            line-height: 40px;
             color: $chocolate-color;
-            @include textShadow(titleBrown, 0, 0, 0, 0);
-            margin: 25px 0 45px 0;
+            margin: 25px 0 20px 0;
         }
 
         .news_letter_input_title {
