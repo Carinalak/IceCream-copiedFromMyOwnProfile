@@ -61,6 +61,19 @@ main {
     @include gridCreation(column, 2, 1fr, 20px);
     margin-top: 135px;
 
+    .product_card:nth-child(3) {
+        order: 1;
+    }
+
+    .product_card:nth-child(6) {
+        order: 1;
+    }
+
+    .product_card:nth-child(9) {
+        order: 1;
+        grid-column: span 2;
+    }
+
     .product_card {
 
         .description_plate,
