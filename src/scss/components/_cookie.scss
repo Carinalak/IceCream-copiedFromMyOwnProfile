@@ -1,17 +1,21 @@
 .cookies_bar {
     position: fixed;
-    padding: 0 10px 0 10px;
-    width: 100%;
-    min-height: 80px;
     bottom: 0;
-    align-items: center;
-    justify-content: center;
+    min-height: 80px;
+    width: 100%;
+    padding: 0 10px;
     background-color: $orange_color;
-    display: flex;
+    @include centerPosition(center, center);
     flex-direction: row;
+    z-index: 3;
+
     .cookies_text {
         color: $chocolate-color;
         margin: 10px;
+
+        .hidden_on_mobile {
+            display: none;
+        }
     }
 
     .cookies_btn {
