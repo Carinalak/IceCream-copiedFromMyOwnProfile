@@ -206,3 +206,35 @@ main {
         }
     }
 }
+
+.background {
+    .waves_mobile {
+        display: none;
+    }
+
+    .pink_circle,
+    .orange_circle {
+        transform: scale(3);
+    }
+
+    .pink_circle {
+        left: 0;
+    }
+    .orange_circle {
+        right: 0;
+    }
+
+    .waves_tablet {
+        display: block;
+
+        &.wave_background_dark {
+            bottom: -150px;
+            max-height: 389px;
+        }
+
+        &.wave_background_light {
+            bottom: -67px;
+            max-height: 407px;
+        }
+    }
+}
