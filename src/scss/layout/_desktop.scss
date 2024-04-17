@@ -44,6 +44,7 @@ body {
     @include gridCreation(column, 12, 1fr, 20px);
 }
 
+
 main {
     max-width: 1750px;
     margin: auto;
@@ -74,4 +75,11 @@ main {
     .about_text_container {
         max-width: 685px;
     }
+}
+
+footer {
+    grid-column: span 12;
+    padding: 15px 80px;
+    margin: auto;
+    max-width: 1750px;
 }
