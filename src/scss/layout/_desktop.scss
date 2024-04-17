@@ -63,7 +63,7 @@ main {
 .product_container {
     @include gridCreation(column, 4, 1fr, 10px);
     grid-row-gap: 50px;
-    margin: 135px 70px 0 70px;
+    margin: 135px 70px 135px 70px;
     
     .product_card:nth-child(3) {
         order: 0;
