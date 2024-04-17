@@ -45,6 +45,8 @@ body {
 }
 
 main {
+    max-width: 1750px;
+    margin: auto;
     grid-column: span 12;
 }
 
@@ -58,8 +60,15 @@ main {
 }
 
 .about_container {
+    justify-content: flex-start;
+
+    .about_title {
+        text-align: left;
+    }
+
     .ice_cream_container {
-        transform: scale(3.1) translateY(-30px);
+        margin-left: 10vw;
+        transform: scale(3.7) translateY(-30px);
     }
 
     .about_text_container {
