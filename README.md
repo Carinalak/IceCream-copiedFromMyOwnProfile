@@ -77,9 +77,10 @@ Desktop version
 ## Final result
 
 ## Lessons learned
-- consistency and coherent design
-- attention to detail
-- communication
+- This project has taught us the importance of consistency and coherency across the full design process as well as using a mobile first approach when designing, and taking in to account a smooth and doable transition from mobile, to tablet, to desktop.
+- We have thoroughly learnt the importance of accessibility, especially implementation of all principles to ensure that all users have access to all contect on all pages. It has been interesting to apply and modify code according to a11y based off of someone else's design.  
+- Furthermore we have understood how important it is to provide thorough and detailed handovers, it has become extra apparent when receiving a design, how difficult and timeconsuming it is to make our own estimates instead of being provided with exact details.
+- As always, communication is key. Not only between the devs and design-team but within the group of developers working on the project. 
 
 ## Adaptations of design
 
@@ -90,3 +91,9 @@ Desktop version
 - Screens: as hover states do not apply to mobile and tablet screens, which usually require touch, we also had to create click states for mobile and tablet.
 
 - Tablet width: in the initial Figma design we discovered that the the width of tablet and desktop were the same, and therefore we received a secondary tablet design with the width of 920px instead from the design team, hence the difference between tablet wireframe vs. final tablet result.
+
+- Header links: increase the sizing of links in the header of a minimum of 35px for accessibility.
+
+
+
+
