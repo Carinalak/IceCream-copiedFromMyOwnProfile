@@ -97,7 +97,6 @@ main {
         max-width: 685px;
     }
 }
-
 .contact_container {
     @include gridCreation(column, 12, 1fr, 20px);
     margin: 70px auto;
@@ -144,6 +143,47 @@ main {
 
         .news_letter_btn {
             margin-left: 5px;
+        }
+    }
+}
+
+.background {
+    .pink_circle,
+    .orange_circle {
+        transform: scale(3.5);
+    }
+
+    .orange_circle {
+        bottom: 55vh;
+    }
+
+    .waves_tablet {
+        display: none;
+    }
+    .waves_desktop {
+        display: block;
+
+        &.wave_background_light {
+            @include backgroundurl(
+                url('/img/animations/wavesLightGloryDesktop.png'),
+                100% 100%,
+                none,
+                center
+            );
+            height: 345px;
+            width: 100%;
+            bottom: 0;
+        }
+
+        &.wave_background_dark {
+            @include backgroundurl(
+                url('/img/animations/wavesDarkGloryDesktop.png'),
+                100% 100%,
+                none,
+                center
+            );
+            height: 240px;
+            width: 100%;
         }
     }
 }

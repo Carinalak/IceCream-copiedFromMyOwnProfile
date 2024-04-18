@@ -38,17 +38,34 @@ body {
     }
 
     .wave_background_light {
-        bottom: 24px;
-        opacity: 50%;
+        @include backgroundurl(
+            url('/img/animations/wavesLightGloryMobile.png'),
+            100% 100%,
+            none,
+            center
+        );
+        min-height: 72px;
+        height: 20vw;
         z-index: -2;
+        bottom: 24px;
     }
 
     .wave_background_dark {
-        bottom: 0;
+        @include backgroundurl(
+            url('/img/animations/wavesDarkGloryMobile.png'),
+            100% 100%,
+            none,
+            center
+        );
+        height: 71px;
+        height: 20vw;
+        width: 100%;
         z-index: -1;
+        bottom: 0;
     }
 
-    .waves_tablet {
+    .waves_tablet,
+    .waves_desktop {
         display: none;
     }
 }

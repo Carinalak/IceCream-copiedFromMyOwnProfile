@@ -258,13 +258,25 @@ main {
         display: block;
 
         &.wave_background_dark {
-            bottom: -150px;
-            max-height: 389px;
+            @include backgroundurl(
+                url('/img/animations/wavesDarkGloryTablet.png'),
+                100% 100%,
+                none,
+                center
+            );
+            height: 389px;
+            bottom: -100px;
         }
 
         &.wave_background_light {
-            bottom: -67px;
-            max-height: 407px;
+            @include backgroundurl(
+                url('/img/animations/wavesLightGloryTablet.png'),
+                100% 100%,
+                none,
+                center
+            );
+            height: 407px;
+            bottom: -22px;
         }
     }
 }
