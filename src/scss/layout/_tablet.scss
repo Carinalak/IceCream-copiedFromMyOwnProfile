@@ -48,11 +48,15 @@ body {
 
 .header_container {
     grid-column: span 4;
-    height: 145px;
+    min-height: 145px;
     border-radius: 60px;
     margin: 0 auto;
     max-width: 868px;
     min-width: 750px;
+    
+    .nav_container .nav_option {
+        padding: 3px 0;
+    }
 }
 
 main {

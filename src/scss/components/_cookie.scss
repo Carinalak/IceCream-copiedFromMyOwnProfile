@@ -29,7 +29,7 @@
             $button-text
         );
 
-        &:focus {
+        &:active {
             background-color: $buttonPrimary-clicked;
         }
     }

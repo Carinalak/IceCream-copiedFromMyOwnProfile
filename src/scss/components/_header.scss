@@ -1,7 +1,7 @@
 .header_container {
     background-color: $lemon-color;
-    height: 4.938rem;
-    border-radius: 0 0 60px 60px;
+    min-height: 4.938rem;
+    border-radius: 60px;
     @include boxShadow(header, 0, 0, 0, 0, 0);
     grid-column: span 2;
     @include centerPosition(center, center);
@@ -20,7 +20,9 @@
 
         .nav_option {
             margin: 0 25px 0 0;
+            padding: 9px 0;
             color: $buttonPrimary-default;
+            cursor: pointer;
 
             &:last-child {
                 margin: 0;
