@@ -60,6 +60,7 @@ h4 {
 
 body {
     font-family: 'Kadwa', serif;
+    background-color: $lemon-color;
 }
 
 h1,
@@ -70,12 +71,6 @@ h5,
 h6 {
     font-family: 'Sigmar One', sans-serif;
     margin: 0;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-    text-decoration-skip-ink: auto;
-    color: currentColor;
 }
 
 /* Make images easier to work with */
@@ -113,4 +108,12 @@ textarea:not([rows]) {
 
 .hidden {
     display: none !important;
+}
+
+a {
+    font-weight: 700;
+}
+
+a:active {
+    color: $link-clicked;
 }

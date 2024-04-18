@@ -3,6 +3,8 @@
     margin-top: 48px;
     @include gridCreation(column, 1, 1fr, 0);
     position: relative;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
 
     .product_card {
         @include centerPosition(center, center);
@@ -11,6 +13,7 @@
         margin: auto;
         margin-bottom: 17px;
         position: relative;
+        cursor: pointer;
 
         .product_img,
         .product_img_big {
@@ -50,13 +53,12 @@
 
         .description_plate,
         .description_plate_big {
-            background-color: $lemon-color;
+            background-color: $strawberry-color;
             border-radius: 20px;
 
             .product_title,
             .product_title_big {
-                color: $strawberry-color;
-                @include textShadow(none, 2px, 2px, 4px, $chocolate-color);
+                color: $chocolate-color;
             }
         }
     }
@@ -89,9 +91,7 @@
         flex-direction: column;
         margin: auto;
         margin-bottom: 17px;
-
         position: absolute;
-
         opacity: 0;
         width: fit-content;
         height: fit-content;
@@ -102,6 +102,7 @@
             height: calc(1.6 * 133px);
             width: calc(1.6 * 133px);
         }
+
         .description_plate_big {
             margin-top: -40px;
             position: relative;
@@ -110,6 +111,7 @@
                 font-size: 2rem;
                 margin-bottom: 10px;
             }
+
             .ingredients {
                 margin: 0;
             }

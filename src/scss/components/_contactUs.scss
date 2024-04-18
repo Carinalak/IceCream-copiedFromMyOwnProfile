@@ -3,13 +3,12 @@
         padding: 0 26px;
 
         .container_title {
-            color: $orange-color;
-            @include textShadow(title, 0, 0, 0, 0);
-            margin: 25px 0 45px 0;
+            color: $chocolate-color;
+            margin: 25px 0 20px 0;
         }
 
         .input_title {
-            margin: 0 0 5px 6px;
+            margin: 0 0 5px 0;
             color: $chocolate-color;
 
             .request_section {
@@ -18,11 +17,13 @@
         }
 
         .input_container {
+            padding: 0 0 0 6px;
+
             .contact_us_input {
                 @include inputField(
                     default,
                     default,
-                    0 0 0 6px,
+                    0 0 0 0,
                     default,
                     default,
                     default
@@ -37,7 +38,8 @@
 
             .input_message {
                 color: $red-color;
-                margin: 0 0 15px 6px;
+                min-height: 1.2rem;
+                margin: 0 0 5px 0;
             }
         }
 
@@ -60,7 +62,7 @@
         .buttons_container {
             display: flex;
             flex-direction: row;
-            margin: 20px 0;
+            margin: 20px 0 20px 6px;
             max-width: 435px;
 
             .primary_button {
@@ -72,9 +74,10 @@
                     2rem,
                     $button-text
                 );
+                @include boxShadow(button, 0, 0, 0, 0, 0);
                 flex: 1;
 
-                &:focus {
+                &:active {
                     background-color: $buttonPrimary-clicked;
                 }
             }
@@ -88,9 +91,10 @@
                     2rem,
                     $buttonSecondary-text
                 );
+                @include boxShadow(button, 0, 0, 0, 0, 0);
                 flex: 1;
 
-                &:focus {
+                &:active {
                     background-color: $buttonSecondary-clicked;
                 }
             }
@@ -102,10 +106,8 @@
         padding: 0 26px;
 
         .news_letter_title {
-            line-height: 40px;
             color: $chocolate-color;
-            @include textShadow(titleBrown, 0, 0, 0, 0);
-            margin: 25px 0 45px 0;
+            margin: 25px 0 20px 0;
         }
 
         .news_letter_input_title {
@@ -133,6 +135,7 @@
                 width: 163px;
             }
         }
+
         .news_letter_btn {
             @include buttonReset(
                 $buttonPrimary-default,
@@ -142,8 +145,9 @@
                 2rem,
                 $button-text
             );
+            @include boxShadow(button, 0, 0, 0, 0, 0);
 
-            &:focus {
+            &:active {
                 background-color: $buttonPrimary-clicked;
             }
         }

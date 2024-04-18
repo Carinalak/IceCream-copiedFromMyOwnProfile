@@ -9,9 +9,26 @@
             href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Sigmar+One&display=swap"
             rel="stylesheet"
         />
-        <title>Glory</title>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <title>Ice cream</title>
     </head>
-
     <body>
         <header class="header_container">
             <h1 class="header_title">Ice cream</h1>
@@ -22,12 +39,10 @@
             </nav>
         </header>
         <main>
-            <div id="productContainer" class="product_container"></div>
-
+            <section id="productContainer" class="product_container"></section>
             <section class="about_container">
+                <h2 class="about_title">About us</h2>
                 <article class="about_text_container">
-
-                    <h2>about us</h2>
                     <p>
                         Step into our sweet sanctuary, where every scoop is a
                         ticket to blissful indulgence. We're not just your
@@ -59,9 +74,9 @@
                         class="ice_cream_SVG"
                         id="iceCreamSVG"
                         xmlns="http://www.w3.org/2000/svg"
-                        width="140"
-                        height="190"
-                        viewBox="-30 -60 140 190"
+                        width="90"
+                        height="170"
+                        viewBox="-10 -60 90 170"
                         fill="none"
                     >
                         <path
@@ -101,16 +116,14 @@
                     </svg>
                 </article>
             </section>
-          
             <section class="contact_container">
                 <div id="contactUsContainer" class="contact_us_container">
-                    <h3 class="container_title">Contact us</h3>
+                    <h2 class="container_title">Contact us</h2>
                 </div>
-
                 <div id="newsLetterContainer" class="news_letter_container">
-                    <h3 class="news_letter_title">
+                    <h2 class="news_letter_title">
                         Sign up for our newsletter
-                    </h3>
+                    </h2>
                     <div class="news_letter_input_container">
                         <h4 class="news_letter_input_title">
                             Your email
@@ -126,14 +139,17 @@
                     <button class="news_letter_btn">Send</button>
                 </div>
             </section>
-
-            <div id="cookiesBar" class="cookies_bar">
-                <p class="cookies_text">
-                    By using this site, you agree to our use of cookies.
-                </p>
-                <button id="cookiesBtn" class="cookies_btn">Accept</button>
-            </div>
         </main>
+        <div id="cookiesBar" class="cookies_bar">
+            <p class="cookies_text">
+                <span class="hidden_on_mobile cookies_text">
+                    Our website uses cookies to enhance your experience and
+                    provide personalized content.
+                </span>
+                By using this site, you agree to our use of cookies.
+            </p>
+            <button id="cookiesBtn" class="cookies_btn">Accept</button>
+        </div>
         <section class="background">
             <article class="pink_circle">
                 <svg
@@ -172,66 +188,63 @@
                 </svg>
             </article>
             <article class="wave_container">
-                <svg
-                    class="wave_background wave_background_light"
-                    width="319"
-                    height="71"
-                    viewBox="0 0 319 71"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M84.5 36.5973C47.3733 25.7052 28.9395 29.1511 0 51.0973V71.0973H318.5V25.0973C273.713 -1.39761 247.641 -12.2152 184 25.0973C130.578 6.03378 113.669 16.4377 84.5 36.5973Z"
-                        fill="#FFCB85"
-                        stroke="#FFCB85"
-                    />
-                </svg>
-                <svg
-                    class="wave_background wave_background_dark"
-                    width="319"
-                    height="71"
-                    viewBox="0 0 319 71"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M84.5 36.5973C47.3733 25.7052 28.9395 29.1511 0 51.0973V71.0973H318.5V25.0973C273.713 -1.39761 247.641 -12.2152 184 25.0973C130.578 6.03378 113.669 16.4377 84.5 36.5973Z"
-                        fill="#FFCB85"
-                        stroke="#FFCB85"
-                    />
-                </svg>
+                <div
+                    class="wave_background wave_background_light waves_mobile"
+                ></div>
+                <div
+                    class="wave_background wave_background_light waves_tablet"
+                ></div>
+                <div
+                    class="wave_background wave_background_light waves_desktop"
+                ></div>
+                <div
+                    class="wave_background wave_background_dark waves_mobile"
+                ></div>
+                <div
+                    class="wave_background wave_background_dark waves_tablet"
+                ></div>
+                <div
+                    class="wave_background wave_background_dark waves_desktop"
+                ></div>
             </article>
         </section>
-
         <footer>
             <div class="footer_contact_container">
-                <h6>Contact:</h6>
-                <div class="footer_address">
-                    <p class="footer_text">Drottninggatan 31</p>
-                    <p class="footer_text">184 50 Stockholm</p>
-                </div>
-                <div class="footer_number_email">
-                    <p class="footer_text">073 555 88 88</p>
-                    <p class="footer_text">info@icecream.com</p>
+                <h4>Contact:</h4>
+                <div class="footer_info_container">
+                    <div class="footer_address">
+                        <p class="footer_text">Drottninggatan 31</p>
+                        <p class="footer_text">184 50 Stockholm</p>
+                    </div>
+                    <div class="footer_number_email">
+                        <p class="footer_text">073 555 88 88</p>
+                        <p class="footer_text">info@icecream.com</p>
+                    </div>
                 </div>
             </div>
             <div class="footer_icon_container">
                 <figure>
                     <img
-                        src="img/socialmediaicons/iconmonstr-instagram-13-240(2) 2(1).png"
-                        alt=""
+                        src="img/socialmediaicons/iconInstagram.png"
+                        alt="Graphic icon of Instagrams logo"
+                        height="94"
+                        width="98"
                     />
                 </figure>
                 <figure>
                     <img
-                        src="img/socialmediaicons/iconmonstr-facebook-3-240(3) 2.png"
-                        alt=""
+                        src="img/socialmediaicons/iconFacebook.png"
+                        alt="Graphic icon of Facebooks logo"
+                        height="94"
+                        width="98"
                     />
                 </figure>
                 <figure>
                     <img
-                        src="img/socialmediaicons/iconmonstr-snapchat-3-240(2) 2.png"
-                        alt=""
+                        src="img/socialmediaicons/iconSnapchat.png"
+                        alt="Graphic icon of Snapchats logo"
+                        height="94"
+                        width="98"
                     />
                 </figure>
             </div>
