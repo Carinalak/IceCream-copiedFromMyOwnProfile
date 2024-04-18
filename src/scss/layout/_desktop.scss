@@ -44,12 +44,6 @@ body {
     @include gridCreation(column, 12, 1fr, 20px);
 }
 
-main {
-    grid-column: span 12;
-    max-width: 1750px;
-    margin: auto;
-}
-
 .header_container {
     grid-column: span 12;
     height: 179px;
@@ -58,6 +52,13 @@ main {
         column-gap: 33px;
     }
 }
+
+main {
+    grid-column: span 12;
+    max-width: 1750px;
+    margin: auto;
+}
+
 .product_container {
     @include gridCreation(column, 4, 1fr, 10px);
     grid-row-gap: 50px;
@@ -97,6 +98,7 @@ main {
         max-width: 685px;
     }
 }
+
 .contact_container {
     @include gridCreation(column, 12, 1fr, 20px);
     margin: 70px auto;
@@ -160,6 +162,7 @@ main {
     .waves_tablet {
         display: none;
     }
+
     .waves_desktop {
         display: block;
 

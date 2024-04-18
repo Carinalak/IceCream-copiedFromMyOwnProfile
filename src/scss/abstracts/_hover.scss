@@ -2,65 +2,49 @@ a:hover {
     color: $link-hover;
 }
 
-
-.contact_container 
-.contact_us_container 
-.buttons_container 
-.primary_button:hover {
+.contact_container
+    .contact_us_container
+    .buttons_container
+    .primary_button:hover {
     background-color: $buttonPrimary-hover;
+
+    &:active {
+        background-color: $buttonPrimary-clicked;
+    }
 }
 
-.contact_container 
-.contact_us_container 
-.buttons_container 
-.secondary_button:hover {
+.contact_container
+    .contact_us_container
+    .buttons_container
+    .secondary_button:hover {
     background-color: $buttonSecondary-hover;
+
+    &:active {
+        background-color: $buttonSecondary-clicked;
+    }
 }
 
-.contact_container 
-.news_letter_container 
-.news_letter_btn:hover {
+.contact_container .news_letter_container .news_letter_btn:hover {
     background-color: $buttonPrimary-hover;
-} 
 
-.cookies_bar
-.cookies_btn:hover {
-    background-color: $buttonPrimary-hover;
+    &:active {
+        background-color: $buttonPrimary-clicked;
+    }
 }
 
-.header_container 
-.nav_container 
-.nav_option:hover {
+.cookies_bar .cookies_btn:hover {
+    background-color: $buttonPrimary-hover;
+
+    &:active {
+        background-color: $buttonPrimary-clicked;
+    }
+}
+
+.header_container .nav_container .nav_option:hover {
     opacity: 70%;
-}
 
-.contact_container 
-.contact_us_container 
-.buttons_container 
-.primary_button:hover:active {
-    background-color: $buttonPrimary-clicked;
-}
-
-.contact_container 
-.contact_us_container 
-.buttons_container 
-.secondary_button:hover:active {
-    background-color: $buttonSecondary-clicked;
-}
-
-.contact_container 
-.news_letter_container 
-.news_letter_btn:hover:active {
-    background-color: $buttonPrimary-clicked;
-} 
-
-.cookies_bar
-.cookies_btn:hover:active {
-    background-color: $buttonPrimary-clicked;
-}
-
-.header_container 
-.nav_container 
-.nav_option:hover:active {
-    opacity: 1;
+    &:active {
+        opacity: 1;
+        color: $menuButton-clicked;
+    }
 }

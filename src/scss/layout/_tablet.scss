@@ -53,7 +53,7 @@ body {
     margin: 0 auto;
     max-width: 868px;
     min-width: 750px;
-    
+
     .nav_container .nav_option {
         padding: 3px 0;
     }
@@ -132,22 +132,19 @@ main {
             .product_title_big {
                 font-size: 3.125rem;
             }
+
             .ingredients {
                 font-size: 1.125rem;
             }
         }
     }
 
-    .product_card_circle_big {
-        .product_img_big {
-            border: 20px solid $orange-color;
-        }
+    .product_card_circle_big .product_img_big {
+        border: 20px solid $orange-color;
     }
 
-    .product_card_square_big {
-        .product_img_big {
-            border: 20px solid $strawberry-color;
-        }
+    .product_card_square_big .product_img_big {
+        border: 20px solid $strawberry-color;
     }
 }
 
@@ -166,9 +163,11 @@ main {
         width: 100%;
         @include textShadow(titleBrown, 0, 0, 0, 0);
     }
+
     .about_text_container {
         max-width: 490px;
     }
+
     .ice_cream_container {
         max-width: 219px;
         margin: 0;
@@ -192,13 +191,16 @@ main {
             margin: 35px 0 20px 0;
             @include textShadow(titleBrown, 0, 0, 0, 0);
         }
+
         .input_container {
             .input_title {
                 margin-bottom: 0;
             }
+
             .contact_us_input {
                 width: 210px;
             }
+
             .bigger_input {
                 width: 260px;
             }
@@ -211,6 +213,7 @@ main {
             }
         }
     }
+
     .news_letter_container {
         margin: 5px 10px 200px 10px;
         padding: 0;
@@ -220,6 +223,7 @@ main {
             line-height: 70px;
             @include textShadow(titleBrown, 0, 0, 0, 0);
         }
+
         .news_letter_input_container {
             #newsLetterEmailInput {
                 width: 300px;
@@ -254,6 +258,7 @@ main {
     .pink_circle {
         left: 0;
     }
+
     .orange_circle {
         right: 0;
     }
@@ -297,6 +302,7 @@ footer {
         h4 {
             margin: 15px 0 15px 0;
         }
+
         .footer_info_container {
             flex-direction: row;
 
