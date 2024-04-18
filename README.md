@@ -1,12 +1,12 @@
-# Glorious Icecream
+# Ice cream
 
-### Demolink
+### Link to repository
 
 https://github.com/Medieinstitutet/fed23d-grafiska-verktyg-glory-1
 
 ### Livelink
 
-https://github.com/Medieinstitutet/fed23d-grafiska-verktyg-glory-1
+https://medieinstitutet.github.io/fed23d-grafiska-verktyg-glory-1/
 
 ### Assigment technicalities
 In our current web development course, we're diving into the world of graphics and design. This project is a team effort, where we've been exploring these concepts together. The assignment unfolded over two weeks: first, each group created a one-page web design using FIGMA. Then, we swapped designs with other groups and dove into coding the design we received in the second week. It's been an exciting journey, offering us insights into both the creative and technical sides of web development. Through this experience, we're gaining a deeper understanding of design principles and how they come to life in real projects.
@@ -34,7 +34,7 @@ Buttons feature rounded corners, contributing to a softer and more appealing aes
 - These effects add depth and interactivity to the user experience.
 
 ## Project built with
-![Affinity Designer](https://img.shields.io/badge/affinity%20desginer-%231B72BE.svg?style=for-the-badge&logo=affinity-designer&logoColor=white)
+![Affinity Designer](https://img.shields.io/badge/affinity%20designer-%231B72BE.svg?style=for-the-badge&logo=affinity-designer&logoColor=white)
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
@@ -43,6 +43,8 @@ Buttons feature rounded corners, contributing to a softer and more appealing aes
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
+![gsap](https://img.shields.io/badge/green%20sock-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
+
 
 ### Start project
 ```
@@ -75,6 +77,17 @@ Desktop version
 
 
 ## Final result
+
+### Mobile
+<img src="./dev/mobile-1.png" alt="Mobile result" width="200" height="auto"/>
+<img src="./dev/mobile-2.png" alt="Mobile result" width="200" height="auto"/>
+<img src="./dev/mobile-3.png" alt="Mobile result" width="200" height="auto"/>
+<img src="./dev/mobile-4.png" alt="Mobile result" width="200" height="auto"/>
+
+| Tablet    | Desktop |
+| -------- | ------- |
+| <img src="./dev/Tablet-1.jpeg" alt="Tablet result" width="200" height="auto"/>  | <img src="./dev/Desktop-1.jpeg" alt="Desktop result" width="200" height="auto"/>    |
+
 
 ## Lessons learned
 - This project has taught us the importance of consistency and coherency across the full design process as well as using a mobile first approach when designing, and taking in to account a smooth and doable transition from mobile, to tablet, to desktop.
