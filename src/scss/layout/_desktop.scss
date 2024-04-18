@@ -86,6 +86,15 @@ main {
 }
 
 .background {
+    .pink_circle,
+    .orange_circle {
+        transform: scale(3.5);
+    }
+
+    .orange_circle {
+        bottom: 55vh;
+    }
+
     .waves_tablet {
         display: none;
     }
