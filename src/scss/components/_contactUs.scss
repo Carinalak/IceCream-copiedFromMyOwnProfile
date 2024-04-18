@@ -76,7 +76,7 @@
                 @include boxShadow(button, 0, 0, 0, 0, 0);
                 flex: 1;
 
-                &:focus {
+                &:active {
                     background-color: $buttonPrimary-clicked;
                 }
             }
@@ -93,7 +93,7 @@
                 @include boxShadow(button, 0, 0, 0, 0, 0);
                 flex: 1;
 
-                &:focus {
+                &:active {
                     background-color: $buttonSecondary-clicked;
                 }
             }
@@ -145,7 +145,7 @@
             );
             @include boxShadow(button, 0, 0, 0, 0, 0);
 
-            &:focus {
+            &:active {
                 background-color: $buttonPrimary-clicked;
             }
         }
