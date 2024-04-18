@@ -11,7 +11,8 @@ export default function renderProducts(products) {
             index % 2 === 0 ? 'product_card_circle' : 'product_card_square',
         );
 
-        // TODO: aria-label for img?
+        productCard.setAttribute('tabindex', '0');
+        productCard.setAttribute('aria-label', product.name);
         const img = document.createElement('div');
         img.classList.add('product_img');
         img.style.setProperty('--bg-img', `url(${product.imgUrl})`);
@@ -28,6 +29,7 @@ export default function renderProducts(products) {
 
         productCard.addEventListener('mouseenter', highlightProducts);
         productCard.addEventListener('touchstart', highlightProducts);
+        productCard.addEventListener('focus', highlightProducts);
 
         const productCardBig = document.createElement('article');
         productCardBig.classList.add('product_card_big');
@@ -37,7 +39,8 @@ export default function renderProducts(products) {
                 : 'product_card_square_big',
         );
 
-        // TODO: aria-label for img?
+        productCardBig.setAttribute('tabindex', '0');
+        productCardBig.setAttribute('aria-label', product.ingredients);
         const imgBig = document.createElement('div');
         imgBig.classList.add('product_img_big');
         imgBig.style.setProperty('--bg-img', `url(${product.imgUrl})`);
@@ -57,10 +60,13 @@ export default function renderProducts(products) {
         const allIngredientsBig = document.createElement('p');
         allIngredientsBig.classList.add('ingredients');
         allIngredientsBig.innerText = `Ingredients: ${ingredientsInText}`;
+        allIngredientsBig.setAttribute('id', `ingredients-${index}`);
+        nameBig.setAttribute('aria-describedby', `ingredients-${index}`);
         descriptionPlateBig.appendChild(allIngredientsBig);
 
         productCardBig.addEventListener('mouseleave', removeHighlightProducts);
         productCardBig.addEventListener('touchend', removeHighlightProducts);
+        productCardBig.addEventListener('focus', removeHighlightProducts);
 
         productCard.appendChild(productCardBig);
 
