@@ -8,7 +8,7 @@
         }
 
         .input_title {
-            margin: 0 0 5px 6px;
+            margin: 0 0 5px 0;
             color: $chocolate-color;
 
             .request_section {
@@ -17,11 +17,13 @@
         }
 
         .input_container {
+            padding: 0 0 0 6px;
+
             .contact_us_input {
                 @include inputField(
                     default,
                     default,
-                    0 0 0 6px,
+                    0 0 0 0,
                     default,
                     default,
                     default
@@ -36,7 +38,7 @@
 
             .input_message {
                 color: $red-color;
-                margin: 0 0 15px 6px;
+                margin: 0 0 15px 0;
             }
         }
 
@@ -59,7 +61,7 @@
         .buttons_container {
             display: flex;
             flex-direction: row;
-            margin: 20px 0;
+            margin: 20px 0 20px 6px;
             max-width: 435px;
 
             .primary_button {
@@ -71,6 +73,7 @@
                     2rem,
                     $button-text
                 );
+                @include boxShadow(button, 0, 0, 0, 0, 0);
                 flex: 1;
 
                 &:focus {
@@ -87,6 +90,7 @@
                     2rem,
                     $buttonSecondary-text
                 );
+                @include boxShadow(button, 0, 0, 0, 0, 0);
                 flex: 1;
 
                 &:focus {
@@ -139,6 +143,7 @@
                 2rem,
                 $button-text
             );
+            @include boxShadow(button, 0, 0, 0, 0, 0);
 
             &:focus {
                 background-color: $buttonPrimary-clicked;
