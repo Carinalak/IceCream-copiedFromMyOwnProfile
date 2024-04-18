@@ -26,11 +26,9 @@ export default function printContactUs() {
         const inputMessage = document.createElement('div');
         inputMessage.classList.add('input_message');
 
-        // Appends
         contactUsContainer.append(inputContainer);
         inputContainer.append(inputTitle, contactInput, inputMessage);
 
-        // Add event listeners
         contactInput.addEventListener('input', (e) => {
             if (e.target.value) {
                 inputMessage.innerText = '';

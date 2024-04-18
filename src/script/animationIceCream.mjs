@@ -3,9 +3,11 @@ import gsap from 'gsap';
 export default function animationIceCream() {
     const svg = document.querySelector('#iceCreamSVG');
     let isAnimating = false;
+
     svg.addEventListener('mouseenter', () => {
         if (!isAnimating) {
             isAnimating = true;
+
             gsap.to(svg, {
                 duration: 2,
                 rotation: 3,
@@ -13,12 +15,14 @@ export default function animationIceCream() {
                 repeat: 0,
                 ease: 'power1.inOut',
             });
+
             gsap.to('#strawberry', {
                 duration: 2,
                 fill: '#FF92D3',
                 repeat: -1,
                 yoyo: true,
             });
+
             gsap.to('#strawberry', {
                 duration: 1,
                 y: -5,
@@ -32,6 +36,7 @@ export default function animationIceCream() {
                     });
                 },
             });
+
             gsap.to('#mint', {
                 duration: 1,
                 x: '+=4',
@@ -49,6 +54,7 @@ export default function animationIceCream() {
                     });
                 },
             });
+
             gsap.to('#chocolate', {
                 duration: 1,
                 y: -4,
